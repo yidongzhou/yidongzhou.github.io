@@ -33,7 +33,7 @@ My academic focus lies in the advancement of statistical methodology and theoret
 
 <div style="font-size: 10px;">*: contributed equally </div>
 
-- <ins>**Zhou, Y.**</ins> and Müller, H.G. (2024) [Dynamic Modeling of Sparse Longitudinal Data and Functional Snippets With Stochastic Differential Equations](https://arxiv.org/pdf/2306.10221.pdf). Journal of the Royal Statistical Society: Series B, just accepted.
+- <ins>**Zhou, Y.**</ins> and Müller, H.G. (2024) [Dynamic Modeling of Sparse Longitudinal Data and Functional Snippets With Stochastic Differential Equations](https://doi.org/10.1093/jrsssb/qkae116). Journal of the Royal Statistical Society: Series B, just accepted.
 - <ins>**Zhou, Y.**</ins> and Müller, H.G. (2024) [Wasserstein-Kaplan-Meier Survival Regression](./assets/files/wkm.pdf). Journal of Computational and Graphical Statistics, in press.
 - <ins>**Zhou, Y.**</ins> and Müller, H.G. (2024) [Wasserstein Regression with Empirical Measures and Density Estimation for Sparse Data](./assets/files/rem.pdf). Biometrics, in press.
 - Kurisu, D.\*, <ins>**Zhou, Y.**</ins>\*, Otsu, T and Müller, H.G. (2024+) Geodesic Causal Inference. [[arXiv](https://arxiv.org/pdf/2406.19604)]
@@ -78,7 +78,7 @@ C., Iao, S.I., Kundu, P., Petersen, A. and Müller, H.G. (2023) [frechet: Statis
 ## Service
 - Reviewer:
   - Journal: Journal of the Royal Statistical Society Series B: Statistical Methodology, Journal of the American Statistical Association, Biometrics, Bernoulli
-  - Conference: NeurIPS 2024, ICLR 2025, AISTATS 2025
+  - Conference: NeurIPS 2024, ICLR 2025, AISTATS 2025, ICML 2025
 
 <!---
 {% include_relative _includes/publications.md %}
