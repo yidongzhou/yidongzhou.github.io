@@ -5,7 +5,7 @@
   year = {2024},
   note = {R package version 0.6.0},
   url = {https://CRAN.R-project.org/package=fdapace},
-  hidden={true}
+  hidden={true},
 }
 
 @manual{chen:23,
@@ -14,7 +14,7 @@
   year={2023},
   note={R package version 0.3.0},
   url={https://CRAN.R-project.org/package=frechet},
-  hidden={true}
+  hidden={true},
 }
 
 @manual{iao:24,
@@ -23,7 +23,7 @@
   note={R package version 0.1.3},
   url = {https://CRAN.R-project.org/package=fdaconcur},
   year={2024},
-  hidden={true}
+  hidden={true},
 }
 
 % journal
@@ -39,7 +39,8 @@
   html={https://doi.org/10.1016/j.jmaa.2021.125677},
   abstract={Delay differential equations form the underpinning of many complex dynamical systems. The forward problem of solving random differential equations with delay has received increasing attention in recent years. Motivated by the challenge to predict the COVID-19 caseload trajectories for individual states in the U.S., we target here the inverse problem. Given a sample of observed random trajectories obeying an unknown random differential equation model with delay, we use a functional data analysis framework to learn the model parameters that govern the underlying dynamics from the data. We show the existence and uniqueness of the analytical solutions of the population delay random differential equation model when one has discrete time delays in the functional concurrent regression model and also for a second scenario where one has a delay continuum or distributed delay. The latter involves a functional linear regression model with history index. The derivative of the process of interest is modeled using the process itself as predictor and also other functional predictors with predictor-specific delayed impacts. This dynamics learning approach is shown to be well suited to model the growth rate of COVID-19 for the states that are part of the U.S., by pooling information from the individual states, using the case process and concurrently observed economic and mobility data as predictors.},
   abbr={JMAA},
-  preview={rded.jpg}
+  preview={rded.jpg},
+  bibtex_show={true},
 }
 
 @article{zhou:22:2,
@@ -57,8 +58,10 @@
   award_name={Paper Award},
   selected={true},
   slides={nrglSlides.pdf},
+  poster={nrglPoster.pdf},
   preview={nrglTaxi.png},
   code={https://github.com/yidongzhou/Network-Regression-with-Graph-Laplacians},
+  bibtex_show={true},
 }
 
 @article{zhou:23,
@@ -74,6 +77,7 @@
   abstract={The maturation of regional brain volumes from birth to preadolescence is a critical developmental process that underlies emerging brain structural connectivity and function. Regulated by genes and environment, the coordinated growth of different brain regions plays an important role in cognitive development. Current knowledge about structural network evolution is limited, partly due to the sparse and irregular nature of most longitudinal neuroimaging data. In particular, it is unknown how factors such as mother's education or sex of the child impact the structural network evolution. To address this issue, we propose a method to construct evolving structural networks and study how the evolving connections among brain regions as reflected at the network level are related to maternal education and biological sex of the child and also how they are associated with cognitive development. Our methodology is based on applying local Fr{\'e}chet regression to longitudinal neuroimaging data acquired from the RESONANCE cohort, a cohort of healthy children (245 females and 309 males) ranging in age from 9 weeks to 10 years. Our findings reveal that sustained highly coordinated volume growth across brain regions is associated with lower maternal education and lower cognitive development. This suggests that higher neurocognitive performance levels in children are associated with increased variability of regional growth patterns as children age.},
   abbr={SR},
   preview={nerbv.jpg},
+  bibtex_show={true},
 }
 
 @article{zhou:24,
@@ -88,6 +92,7 @@
   abstract={Survival analysis plays a pivotal role in medical research, offering valuable insights into the timing of events such as survival time.  One common challenge in survival analysis is the necessity to adjust the survival function to account for additional factors, such as age, gender, and ethnicity. We propose an innovative regression model for right-censored survival data across heterogeneous populations, leveraging the Wasserstein space of probability measures. Our approach models the probability measure of survival time and the corresponding non-parametric Kaplan-Meier estimator for each subgroup as elements of the Wasserstein space. The Wasserstein space provides a flexible framework for modeling heterogeneous populations, allowing us to capture complex relationships between covariates and survival times. We address an underexplored aspect by deriving the non-asymptotic convergence rate of the Kaplan-Meier estimator to the underlying probability measure in terms of the Wasserstein metric. The proposed model is supported with a solid theoretical foundation including pointwise and uniform convergence rates, along with an efficient algorithm for model fitting. The proposed model effectively accommodates random variation that may exist in the probability measures across different subgroups, demonstrating superior performance in both simulations and two case studies compared to the Cox proportional hazards model and other alternative models.},
   preview={wkm.png},
   code={https://github.com/yidongzhou/Wasserstein-Kaplan-Meier-Survival-Regression},
+  bibtex_show={true},
 }
 
 @article{zhou:24:2,
@@ -105,6 +110,8 @@
   slides={remSlides.pdf},
   preview={rem.png},
   code={https://github.com/yidongzhou/Wasserstein-regression-with-empirical-measures},
+  selected={true},
+  bibtex_show={true},
 }
 
 @article{zhou:24:3,
@@ -124,6 +131,7 @@
   poster={dmPoster.pdf},
   preview={dm.png},
   code={https://github.com/yidongzhou/Dynamic-Modeling-of-Functional-Snippets},
+  bibtex_show={true},
 }
 
 % preprint
@@ -139,6 +147,7 @@
   slides={dfrSlides.pdf},
   abbr={arXiv},
   preview={dfr.jpg},
+  bibtex_show={true},
 }
 
 @article{zhou:24:5,
@@ -150,6 +159,7 @@
   abstract={Adjusting for confounding and imbalance when establishing statistical relationships is an increasingly important task, and causal inference methods have emerged as the most popular tool to achieve this. Causal inference has been developed mainly for regression relationships with scalar responses and also for distributional responses. We introduce here a general framework for causal inference when responses reside in general geodesic metric spaces, where we draw on a novel geodesic calculus that facilitates scalar multiplication for geodesics and the quantification of treatment effects through the concept of geodesic average treatment effect. Using ideas from Fr{\'e}chet regression, we obtain a doubly robust estimation of the geodesic average treatment effect and results on consistency and rates of convergence for the proposed estimators. We also study uncertainty quantification and inference for the treatment effect. Examples and practical implementations include simulations and data illustrations for responses corresponding to compositional responses as encountered for U.S. statewise energy source data, where we study the effect of coal mining, network data corresponding to New York taxi trips, where the effect of the COVID-19 pandemic is of interest, and the studying the effect of Alzheimer's disease on connectivity networks.},
   abbr={arXiv},
   preview={gate.jpg},
+  bibtex_show={true},
 }
 
 @article{zhou:24:6,
@@ -158,7 +168,8 @@
   journal={Submitted},
   year={2024},
   hidden={true},
-  abstract={Analyzing complex data across various scientific fields often requires identifying central or typical elements as well as atypical elements, i.e., establishing central or ``normal'' regions at pre-specified levels of centrality. We introduce centrality scores (C-scores) utilizing distance profiles (Dubey et. al. 2024). C-scores are derived from weighted optimal transports of distance profiles and can be used to establish central or ``normal'' regions for complex data objects, including high-dimensional data, samples of networks and many other types of complex data. Simulations for data in Euclidean, spherical and Wasserstein spaces validate this approach. Centrality scores can be computed for in and out of sample elements and are illustrated for data on gene expression, temperature recordings and handwritten digit recognition. They provide effective identification of central and peripheral elements and enable meaningful insights for complex and high-dimensional data.}
+  abstract={Analyzing complex data across various scientific fields often requires identifying central or typical elements as well as atypical elements, i.e., establishing central or ``normal'' regions at pre-specified levels of centrality. We introduce centrality scores (C-scores) utilizing distance profiles (Dubey et. al. 2024). C-scores are derived from weighted optimal transports of distance profiles and can be used to establish central or ``normal'' regions for complex data objects, including high-dimensional data, samples of networks and many other types of complex data. Simulations for data in Euclidean, spherical and Wasserstein spaces validate this approach. Centrality scores can be computed for in and out of sample elements and are illustrated for data on gene expression, temperature recordings and handwritten digit recognition. They provide effective identification of central and peripheral elements and enable meaningful insights for complex and high-dimensional data.},
+  bibtex_show={true},
 }
 
 @article{zhou:25,
@@ -167,7 +178,8 @@
   journal={Submitted},
   year={2025},
   hidden={true},
-  abstract={Gradient boosting has become a cornerstone of machine learning, enabling base learners such as decision trees to achieve exceptional predictive performance. While existing algorithms primarily handle scalar or Euclidean outputs, increasingly prevalent complex-structured data, such as distributions, networks, and manifold-valued responses, present challenges for traditional methods. Such non-Euclidean data lack algebraic structures such as addition, subtraction, or scalar multiplication required by standard gradient boosting frameworks. To address these challenges, we introduce \textit{\f geodesic boosting} (FGBoost), a novel approach tailored for responses residing in geodesic metric spaces. FGBoost leverages geodesics as proxies for residuals and constructs ensembles in a way that respects the intrinsic geometry of the response space. Through theoretical analysis, extensive simulations, and real-world applications, we demonstrate the strong performance and adaptability of FGBoost, showcasing its potential for modeling complex data.}
+  abstract={Gradient boosting has become a cornerstone of machine learning, enabling base learners such as decision trees to achieve exceptional predictive performance. While existing algorithms primarily handle scalar or Euclidean outputs, increasingly prevalent complex-structured data, such as distributions, networks, and manifold-valued responses, present challenges for traditional methods. Such non-Euclidean data lack algebraic structures such as addition, subtraction, or scalar multiplication required by standard gradient boosting frameworks. To address these challenges, we introduce \textit{\f geodesic boosting} (FGBoost), a novel approach tailored for responses residing in geodesic metric spaces. FGBoost leverages geodesics as proxies for residuals and constructs ensembles in a way that respects the intrinsic geometry of the response space. Through theoretical analysis, extensive simulations, and real-world applications, we demonstrate the strong performance and adaptability of FGBoost, showcasing its potential for modeling complex data.},
+  bibtex_show={true},
 }
 
 @article{zhou:25:2,
@@ -179,6 +191,7 @@
   abstract={Difference-in-differences (DID) is a widely used quasi-experimental design for causal inference, traditionally applied to scalar or Euclidean outcomes, while extensions to outcomes residing in non-Euclidean spaces remain limited. Existing methods for such outcomes have primarily focused on univariate distributions, leveraging linear operations in the space of quantile functions, but these approaches cannot be directly extended to outcomes in general metric spaces. In this paper, we propose geodesic DID, a novel DID framework for outcomes in geodesic metric spaces, such as distributions, networks, and manifold-valued data. To address the absence of algebraic operations in these spaces, we use geodesics as proxies for differences and introduce the geodesic average treatment effect on the treated (ATT) as the causal estimand. We establish the identification of the geodesic ATT and derive the convergence rate of its sample versions, employing tools from metric geometry and empirical process theory. This framework is further extended to the case of staggered DID settings, allowing for multiple time periods and varying treatment timings. To illustrate the practical utility of geodesic DID, we analyze health impacts of the Soviet Union's collapse using age-at-death distributions and assess effects of U.S. electricity market liberalization on electricity generation compositions.},
   abbr={arXiv},
   preview={gdd.jpg},
+  bibtex_show={true},
 }
 
 @article{zhou:25:3,
@@ -187,6 +200,8 @@
   journal={Submitted},
   year={2025},
   hidden={true},
+  abstract={In classical data analysis, the atoms of data are scalars, vectors or functions, which typically are considered to be elements of a vector space. The classical approach falls short for data where the data atoms are random objects located in metric spaces for which linear operations are not available. Examples of practical interest are samples of distributions, networks, covariance matrices or trees; these objects reside in spaces that do not possess linear structure, so that even elementary operations such as addition cannot be executed. In this article we showcase applications of some recently developed tools for such data, including measures of location and spread, regression, depth and quantiles.},
+  bibtex_show={true},
 }
 
 @article{zhou:25:4,
@@ -196,4 +211,5 @@
   year={2025},
   hidden={true},
   abstract={Transfer learning is a powerful paradigm for leveraging knowledge from source domains to enhance learning in a target domain. However, traditional transfer learning approaches often focus on scalar or multivariate data within Euclidean spaces, limiting their applicability to complex data structures such as probability distributions or manifold-valued objects. To address this, we introduce a novel framework for transfer learning in regression models, where outputs are probability distributions residing in the Wasserstein space. When the informative subset of transferable source domains is known, we propose an estimator with provable asymptotic convergence rates, quantifying the impact of domain similarity on transfer efficiency. For cases where the informative subset is unknown, we develop a data-driven transfer learning procedure designed to mitigate negative transfer. The proposed methods are supported by rigorous theoretical analysis and are validated through extensive simulations and a real-world application.},
+  bibtex_show={true},
 }
