@@ -1,16 +1,16 @@
 {
   "basics": {
-    "name": "Albert Einstein",
+    "name": "Yidong Zhou",
     "label": "Scientist",
     "image": "",
-    "email": "albert@einstein.de",
-    "phone": "(912) 123-4567",
-    "url": "https://alshedivat.github.io/al-folio/",
+    "email": "ydzhou@ucdavis.edu",
+    "phone": "(530) 302-6078",
+    "url": "https://yidongzhou.github.io",
     "summary": "A German-born theoretical physicist, widely ranked among the greatest and most influential scientists of all time",
     "location": {
-      "address": "2712 Broadway St",
-      "postalCode": "CA 94115",
-      "city": "San Francisco",
+      "address": "One Shields Avenue",
+      "postalCode": "CA 95616",
+      "city": "Davis",
       "countryCode": "US",
       "region": "California"
     },

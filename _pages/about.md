@@ -1,34 +1,36 @@
 ---
 layout: about
-title: about
+title: About
 permalink: /
-subtitle: <a href='#'>Affiliations</a>. Address. Contacts. Motto. Etc.
+subtitle: Postdoctoral Scholar, <a href='https://statistics.ucdavis.edu/'>Department of Statistics</a>, <a href='https://www.ucdavis.edu/'>University of California, Davis</a>.
 
 profile:
   align: right
   image: prof_pic.jpg
   image_circular: false # crops the image to make it circular
   more_info: >
-    <p>555 your office number</p>
-    <p>123 your address street</p>
-    <p>Your City, State 12345</p>
+    <p>One Shields Ave, Davis, CA</p>
+    <p>ydzhou (at) ucdavis.edu</p>
 
 selected_papers: true # includes a list of papers marked as "selected={true}"
-social: true # includes social icons at the bottom of the page
+social: false # includes social icons at the bottom of the page
 
 announcements:
-  enabled: true # includes a list of news items
+  enabled: false # includes a list of news items
   scrollable: true # adds a vertical scroll bar if there are more than 3 news items
   limit: 5 # leave blank to include all the news in the `_news` folder
 
 latest_posts:
-  enabled: true
+  enabled: false
   scrollable: true # adds a vertical scroll bar if there are more than 3 new posts items
   limit: 3 # leave blank to include all the blog posts
 ---
 
-Write your biography here. Tell the world about yourself. Link to your favorite [subreddit](http://reddit.com). You can put a picture in, too. The code is already in, just name your picture `prof_pic.jpg` and put it in the `img/` folder.
+I am currently a postdoctoral scholar in the [Department of Statistics](https://statistics.ucdavis.edu/) at the [University of California, Davis](https://www.ucdavis.edu/), working with Professor [Hans-Georg Müller](https://anson.ucdavis.edu/~mueller/). Previously, I obtained my Ph.D. in Statistics from the [University of California, Davis](https://www.ucdavis.edu/) in March 2024, under the guidance of Professor [Hans-Georg Müller](https://anson.ucdavis.edu/~mueller/). Before coming to UC Davis, I earned my B.S. in Statistics from the [University of Science and Technology of China](https://en.ustc.edu.cn/) in 2019.
 
-Put your address / P.O. box / other info right below your picture. You can also disable any of these elements by editing `profile` property of the YAML header of your `_pages/about.md`. Edit `_bibliography/papers.bib` and Jekyll will render your [publications page](/al-folio/publications/) automatically.
+My academic focus lies in the advancement of statistical methodology and theoretical frameworks applicable to non-Euclidean data.
 
-Link to your social media connections, too. This theme is set up to use [Font Awesome icons](https://fontawesome.com/) and [Academicons](https://jpswalsh.github.io/academicons/), like the ones below. Add your Facebook, Twitter, LinkedIn, Google Scholar, or just disable all of them.
+- **Metric space-valued data:** Networks, covariance matrices, distributions, and compositional data, with applications in biological and social sciences, multi-cohort studies, and brain imaging studies.
+- **Functional/longitudinal data:** Sparse functional data, particularly functional snippets, with applications in accelerated longitudinal studies.
+
+
