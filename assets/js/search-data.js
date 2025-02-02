@@ -10,11 +10,25 @@ ninja.data = [{
       window.location.href = "/";
     },
   },{id: "nav-publications",
-          title: "Publications",
+          title: "📜 Publications",
           description: "* : Equal contribution †: Corresponding  author.",
           section: "Navigation",
           handler: () => {
             window.location.href = "/publications/";
+          },
+        },{id: "nav-software",
+          title: "💻 Software",
+          description: "",
+          section: "Navigation",
+          handler: () => {
+            window.location.href = "/software/";
+          },
+        },{id: "nav-teaching",
+          title: "👨‍🏫 Teaching",
+          description: "",
+          section: "Navigation",
+          handler: () => {
+            window.location.href = "/teaching/";
           },
         },{id: "nav-awards-amp-service",
           title: "Awards &amp; Service",
@@ -22,20 +36,6 @@ ninja.data = [{
           section: "Navigation",
           handler: () => {
             window.location.href = "/awards/";
-          },
-        },{id: "nav-software",
-          title: "Software",
-          description: "",
-          section: "Navigation",
-          handler: () => {
-            window.location.href = "/software/";
-          },
-        },{id: "nav-teaching",
-          title: "Teaching",
-          description: "",
-          section: "Navigation",
-          handler: () => {
-            window.location.href = "/teaching/";
           },
         },{id: "post-a-post-with-image-galleries",
       
