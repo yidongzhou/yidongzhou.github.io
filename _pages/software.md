@@ -1,9 +1,9 @@
 ---
 layout: page
 permalink: /software/
-title: Software
+title: 💻 Software
 nav: true
-nav_order: 4
+nav_order: 3
 ---
 
 - [fdapace: Functional Data Analysis and Empirical Dynamics](https://CRAN.R-project.org/package=fdapace)

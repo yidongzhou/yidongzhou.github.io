@@ -9,8 +9,8 @@ profile:
   image: prof_pic.jpg
   image_circular: false # crops the image to make it circular
   more_info: >
-    <p>One Shields Ave, Davis, CA</p>
-    <p>ydzhou (at) ucdavis.edu</p>
+    <p>📍 Davis, CA 95616, USA</p>
+    <p>📧 ydzhou (at) ucdavis.edu</p>
 
 selected_papers: true # includes a list of papers marked as "selected={true}"
 social: false # includes social icons at the bottom of the page
@@ -26,10 +26,8 @@ latest_posts:
   limit: 3 # leave blank to include all the blog posts
 ---
 
-Hi! I'm Yidong Zhou, a postdoctoral scholar in the [Department of Statistics](https://statistics.ucdavis.edu/) at the [University of California, Davis](https://www.ucdavis.edu/), working with Professor [Hans-Georg Müller](https://anson.ucdavis.edu/~mueller/). I received my Ph.D. in Statistics from the [University of California, Davis](https://www.ucdavis.edu/) in March 2024, also under his guidance. Before that, I earned my B.S. in Statistics from the [University of Science and Technology of China](https://en.ustc.edu.cn/) in 2019. In addition to my academic research, I gained industry experience as a summer intern at Amazon in 2022.
+👋 Hi! I'm Yidong Zhou, a postdoctoral scholar in the [Department of Statistics](https://statistics.ucdavis.edu/) at the [University of California, Davis](https://www.ucdavis.edu/), working with Professor [Hans-Georg Müller](https://anson.ucdavis.edu/~mueller/). I received my Ph.D. in Statistics from the [University of California, Davis](https://www.ucdavis.edu/) in March 2024, also under his guidance. Before that, I earned my B.S. in Statistics from the [University of Science and Technology of China](https://en.ustc.edu.cn/) in 2019. In addition to my academic research, I gained industry experience as a summer intern at Amazon in 2022.
 
-My research develops statistical methodologies that harness the **intrinsic geometric structure** of complex data. As modern data collection expands beyond traditional settings, new challenges arise in analyzing structured data such as functional data, networks, compositional data, and probability distributions. Conventional statistical methods, often designed for Euclidean spaces, fail to capture the rich geometry and dependencies inherent in these data types. My work addresses this gap by designing statistical models that are intrinsically aligned with the data’s geometric structure, encompassing **regression**, **causal inference**, and **deep learning**. These approaches facilitate robust inference and learning across diverse applications, including longitudinal studies, network science, and biomedical research.
+🔍 My research develops statistical methodologies that harness the **intrinsic geometric structure** of complex data. As modern data collection expands beyond traditional settings, new challenges arise in analyzing structured data such as functional data, networks, compositional data, and probability distributions. Conventional statistical methods, often designed for Euclidean spaces, fail to capture the rich geometry and dependencies inherent in these data types. My work addresses this gap by designing statistical models that are intrinsically aligned with the data’s geometric structure, encompassing **regression**, **causal inference**, and **deep learning**. These approaches facilitate robust inference and learning across diverse applications, including longitudinal studies, network science, and biomedical research.
 
-I am always open to collaborations and enthusiastic about exploring new research directions. Feel free to reach out if you're interested in working together!
-
-
+🤝 I am always open to collaborations and enthusiastic about exploring new research directions. Feel free to reach out if you're interested in working together!

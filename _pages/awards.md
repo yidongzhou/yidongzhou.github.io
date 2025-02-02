@@ -3,21 +3,21 @@ layout: page
 permalink: /awards/
 title: Awards & Service
 nav: true
-nav_order: 3
+nav_order: 5
 ---
 
-### Awards and Honors
+### 🎖 Awards and Honors
 - <ins>**[IMS Hannan Graduate Student Travel Award](https://imstat.org/ims-awards/ims-hannan-graduate-student-travel-award/)**</ins>, Apr. 2024
 - <ins>**Scholar Award**</ins>, NeurIPS, Oct. 2023
 - <ins>**Peter Hall Graduate Student Research Award**</ins> for overall excellence in statistical research during the doctoral degree, Department of Statistics, UC Davis, Jun. 2023
 - <ins>**Student Paper Award Finalist in Nonparametric Section**</ins>, American Statistical Association, Jan. 2023
 
-### Service
+### 📝 Service
 - Reviewer:
   - Journal: Journal of the Royal Statistical Society Series B: Statistical Methodology, Journal of the American Statistical Association, Biometrics, Bernoulli
   - Conference: NeurIPS 2024, ICLR 2025, AISTATS 2025, ICML 2025
 
-### Presentations
+### 💬 Presentations
 - ECHO/GATES Neuromodeling Workshop
   - Vail, CO, Oct. 2022
   - Vail, CO, Sep. 2023
