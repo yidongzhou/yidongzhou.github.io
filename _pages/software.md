@@ -23,11 +23,11 @@ nav_order: 3
   - ![CRAN version](https://www.r-pkg.org/badges/version/frechet) ![CRAN downloads](https://cranlogs.r-pkg.org/badges/grand-total/frechet)
   - ```bibtex
     @Manual{frechet,
-      title={frechet: Statistical Analysis for Random Objects and Non-Euclidean Data},
-      author={Chen, Yaqing and Zhou, Yidong and Chen, Han and Gajardo, {\'A}lvaro and Fan, Jianing and Zhong, Q and Dubey, P and Han, Kyunghee and Bhattacharjee, S and Zhu, Changbo and Iao, Su I and Kundu, Poorbita and Petersen, Alexander and M{\"u}ller, Hans-Georg},
-      year={2023},
-      note={R package version 0.3.0},
-      url={https://CRAN.R-project.org/package=frechet},
+      title = {frechet: Statistical Analysis for Random Objects and Non-Euclidean Data},
+      author = {Chen, Yaqing and Zhou, Yidong and Chen, Han and Gajardo, {\'A}lvaro and Fan, Jianing and Zhong, Q and Dubey, P and Han, Kyunghee and Bhattacharjee, S and Zhu, Changbo and Iao, Su I and Kundu, Poorbita and Petersen, Alexander and M{\"u}ller, Hans-Georg},
+      year = {2023},
+      note = {R package version 0.3.0},
+      url = {https://CRAN.R-project.org/package=frechet},
     }
     ```
 - [fdaconcur: Concurrent Regression and History Index Models for Functional Data](https://CRAN.R-project.org/package=fdaconcur)
@@ -35,10 +35,10 @@ nav_order: 3
   - ![CRAN version](https://www.r-pkg.org/badges/version/fdaconcur) ![CRAN downloads](https://cranlogs.r-pkg.org/badges/grand-total/fdaconcur)
   - ```bibtex
     @Manual{fdaconcur,
-      title={fdaconcur: Concurrent Regression and History Index Models for Functional Data},
-      author={Iao, Su I and Bhattacharjee, Satarupa and Chen, Yaqing and Zhu, Changbo and Chen, Han and Zhou, Yidong and Gajardo, {\'A}lvaro and Kundu, Poorbita and Zhou, Hang and M{\"u}ller, Hans-Georg},
-      note={R package version 0.1.3},
+      title = {fdaconcur: Concurrent Regression and History Index Models for Functional Data},
+      author = {Iao, Su I and Bhattacharjee, Satarupa and Chen, Yaqing and Zhu, Changbo and Chen, Han and Zhou, Yidong and Gajardo, {\'A}lvaro and Kundu, Poorbita and Zhou, Hang and M{\"u}ller, Hans-Georg},
+      note = {R package version 0.1.3},
       url = {https://CRAN.R-project.org/package=fdaconcur},
-      year={2024},
+      year = {2024},
     }
     ```
