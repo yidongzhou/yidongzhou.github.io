@@ -7,6 +7,7 @@ nav_order: 5
 ---
 
 ### 🎖 Awards and Honors
+- <ins>**[IMS New Researcher Travel Award](https://imstat.org/ims-awards/ims-new-researcher-travel-award/)**</ins>, Apr. 2025
 - <ins>**[IMS Hannan Graduate Student Travel Award](https://imstat.org/ims-awards/ims-hannan-graduate-student-travel-award/)**</ins>, Apr. 2024
 - <ins>**Scholar Award**</ins>, NeurIPS, Oct. 2023
 - <ins>**Peter Hall Graduate Student Research Award**</ins> for overall excellence in statistical research during the doctoral degree, Department of Statistics, UC Davis, Jun. 2023
