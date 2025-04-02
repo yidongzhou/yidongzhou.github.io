@@ -11,7 +11,7 @@ nav_order: 5
 - <ins>**[IMS Hannan Graduate Student Travel Award](https://imstat.org/ims-awards/ims-hannan-graduate-student-travel-award/)**</ins>, Apr. 2024
 - <ins>**Scholar Award**</ins>, NeurIPS, Oct. 2023
 - <ins>**Peter Hall Graduate Student Research Award**</ins> for overall excellence in statistical research during the doctoral degree, Department of Statistics, UC Davis, Jun. 2023
-- <ins>**Student Paper Award Finalist in Nonparametric Section**</ins>, American Statistical Association, Jan. 2023
+- <ins>**Student Paper Award Finalist, ASA Nonparametric Statistics Section**</ins>, Jan. 2023
 
 ### 📝 Service
 - Reviewer:
