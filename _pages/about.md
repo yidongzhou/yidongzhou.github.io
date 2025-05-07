@@ -31,3 +31,5 @@ latest_posts:
 🔍 My research develops statistical methodologies that harness the **intrinsic geometric structure** of complex data. As modern data collection expands beyond traditional settings, new challenges arise in analyzing structured data such as functional data, networks, compositional data, and probability distributions. Conventional statistical methods, often designed for Euclidean spaces, fail to capture the rich geometry and dependencies inherent in these data types. My work addresses this gap by designing statistical models that are intrinsically aligned with the data’s geometric structure, encompassing **regression**, **causal inference**, and **deep learning**. These approaches facilitate robust inference and learning across diverse applications, including longitudinal studies, network science, and biomedical research.
 
 🤝 I am always open to collaborations and enthusiastic about exploring new research directions. Feel free to reach out if you're interested in working together!
+
+🚀 **I will be on the 2025-2026 job market and would be happy to discuss any opportunities!**
