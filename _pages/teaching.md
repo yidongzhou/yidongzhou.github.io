@@ -38,7 +38,7 @@ nav_order: 4
   - [Final](/assets/pdf/STA100/final.pdf){:target="_blank" rel="noopener noreferrer"}, [Formula Sheet](/assets/pdf/STA100/formulaSheet.pdf){:target="_blank" rel="noopener noreferrer"}
 
 ### Teaching Assistant
-- **[Data & Web Technologies for Data Analysis](https://statistics.ucdavis.edu/expanded-descriptions/220)** (STA 220, graduate level) <br>
+- **[Data & Web Technologies for Data Analysis](https://statistics.sf.ucdavis.edu/sta-220-data-web-technologies-data-analysis)** (STA 220, graduate level) <br>
   University of California, Davis, [Winter 2021](https://github.com/yidongzhou/STA-220-WQ-2021), [Winter 2022](https://github.com/yidongzhou/STA-220-WQ-2022)
 - **[Applied Statistical Methods: Regression Analysis](https://statistics.ucdavis.edu/expanded-descriptions/108)** (STA 108, undergraduate level) <br>
   University of California, Davis, [Spring 2021](https://github.com/yidongzhou/STA-108B-SQ-2021)
