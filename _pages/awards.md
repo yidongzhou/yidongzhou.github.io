@@ -18,7 +18,7 @@ nav_order: 5
 - Reviewer:
   - Journal: Journal of the Royal Statistical Society Series B: Statistical Methodology, Journal of the American Statistical Association, Biometrics, Bernoulli
   - Conference: NeurIPS 2024, ICLR 2025, AISTATS 2025, ICML 2025, NeurIPS 2025
-- Conference Organization
+- Conference Organization:
   - Chair, "Functional and Longitudinal Modeling" session, International Conference on Statistics and Data Science, Vancouver, Canada, Jun. 2025
   - Organizer, "Innovations in Causal Inference and Statistical Methods for Complex Data Structures" session, ICSA China Conference, Zhuhai, China, Jun. 2025
 
