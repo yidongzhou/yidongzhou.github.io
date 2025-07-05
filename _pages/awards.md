@@ -46,5 +46,6 @@ nav_order: 5
 - Geodesic Causal Inference
   - International Conference on Statistics and Data Science, Vancouver, Canada, Jun. 2025
   - ICSA China Conference, Zhuhai, China, Jun. 2025
+  - USTC Conference on Frontiers of Statistics, Hefei, China, Jul. 2025
   - The 3rd Joint Conference on Statistics and Data Science in China, Hangzhou, China, Jul. 2025
   - Joint Statistical Meeting, Nashville, TN, Aug. 2025
