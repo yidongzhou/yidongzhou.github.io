@@ -6,7 +6,7 @@ subtitle: Postdoctoral Scholar, <a href='https://statistics.ucdavis.edu/'>Depart
 
 profile:
   align: right
-  image: prof_pic.jpg
+  image: prof_pic5.jpg
   image_circular: false # crops the image to make it circular
   more_info: >
     <p>📍 Davis, CA 95616, USA</p>
