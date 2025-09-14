@@ -189,7 +189,17 @@
   journal={Submitted},
   year={2025},
   hidden={true},
-  abstract={Gradient boosting has become a cornerstone of machine learning, enabling base learners such as decision trees to achieve exceptional predictive performance. While existing algorithms primarily handle scalar or Euclidean outputs, increasingly prevalent complex-structured data, such as distributions, networks, and manifold-valued responses, present challenges for traditional methods. Such non-Euclidean data lack algebraic structures such as addition, subtraction, or scalar multiplication required by standard gradient boosting frameworks. To address these challenges, we introduce \textit{\f geodesic boosting} (FGBoost), a novel approach tailored for responses residing in geodesic metric spaces. FGBoost leverages geodesics as proxies for residuals and constructs ensembles in a way that respects the intrinsic geometry of the response space. Through theoretical analysis, extensive simulations, and real-world applications, we demonstrate the strong performance and adaptability of FGBoost, showcasing its potential for modeling complex data.},
+  abstract={Gradient boosting has become a cornerstone of machine learning, enabling base learners such as decision trees to achieve exceptional predictive performance. While existing algorithms primarily handle scalar or Euclidean outputs, increasingly prevalent complex-structured data, such as distributions, networks, and manifold-valued responses, present challenges for traditional methods. Such non-Euclidean data lack algebraic structures such as addition, subtraction, or scalar multiplication required by standard gradient boosting frameworks. To address these challenges, we introduce \textit{Fr{\'e}chet geodesic boosting} (FGBoost), a novel approach tailored for responses residing in geodesic metric spaces. FGBoost leverages geodesics as proxies for residuals and constructs ensembles in a way that respects the intrinsic geometry of the response space. Through theoretical analysis, extensive simulations, and real-world applications, we demonstrate the strong performance and adaptability of FGBoost, showcasing its potential for modeling complex data.},
+  bibtex_show={true},
+}
+
+@article{zhou:25:7,
+  title={{SWiFt}: Learning Sample Weights for {F}r{\'e}chet Regression with Neural Networks},
+  author={Zhou*, Yidong and Iao*, Su I and M{\"u}ller, Hans-Georg},
+  journal={Submitted},
+  year={2025},
+  hidden={true},
+  abstract={Many modern applications involve predicting structured, non-Euclidean outputs such as probability distributions, networks, and symmetric positive-definite matrices. These outputs are naturally modeled as elements of general metric spaces, where classical regression techniques that rely on vector space structure no longer apply. We introduce SWiFt, an end-to-end framework for regression with outputs in general metric spaces. SWiFt performs prediction via a weighted Fr{\'e}chet means over training outputs, where the weights are learned by a neural network conditioned on the input. This approach avoids Euclidean embeddings and parametric assumptions, while preserving the intrinsic geometry of the output space. We establish theoretical guarantees including a universal approximation theorem and convergence analysis under entropy-regularized training. Empirical results on both synthetic and real datasets demonstrate that SWiFt achieves state-of-the-art performance across a range of non-Euclidean output types.},
   bibtex_show={true},
 }
 
@@ -251,12 +261,13 @@
   bibtex_show={true},
 }
 
-@article{zhou:25:7,
+@article{zhou:25:9,
   title={Mental health impacts of particulate matter exposure and non-optimal temperature among rural and urban children in eastern {C}hina},
   author={Wu, Yangyang and Wei, Jing and Cheng, Biran and Sun, Hong and Zhou, Yidong and Li, Chen and Wang, Peng and Zhang, Hao and Wang, Yiyi and Huang, Lei and Chen, Kai},
   journal={npj Mental Health Research},
   volume={4},
-  number={21},
+  number={1},
+  pages={21},
   year={2025},
   keywords={journal},
   publisher={Nature Publishing Group UK London},
@@ -264,5 +275,26 @@
   abstract={Over 100 million children worldwide suffer from mental distress, with incidence rates steadily increasing. However, the combined impacts of air pollution and non-optimal temperature on schoolchildren's mental health, as well as the disparities across urban and rural schools and between genders, remain insufficiently explored. Utilizing 95,658 mental distress records from school children in eastern China, we developed nine composite exposure scenarios to evaluate the mental health impacts of short-term (0--14 days) exposure to particulate matter (PM) air pollution, average temperature, and temperature variability (including both intra-day and inter-day temperature fluctuations). We found that children's mental distress was significantly associated with PM pollution, particularly in urban schools, with rising risk trends and intensified hazards for finer particles. Polluted days coupled with warming temperature and large intra-day and inter-day fluctuations consistently exhibited higher and increasing risks, with relative risks ranging from 1.031 to 1.534. Girls, constituting 61.4% of the cases examined, exhibited greater vulnerability than boys, with higher threats and rising trends across all scenarios. Among the affected children, 77.9% didn't receive medical assistance. Given the global warming trend, it's crucial to address the combined impacts of extreme weather and PM pollution on schoolchildren's mental health, particularly for girls and in rapidly urbanizing areas.},
   abbr={npj},
   preview={mhi.png},
+  bibtex_show={true},
+}
+
+@article{zhou:25:10,
+  title={Longitudinal Centrality Regions for Random Objects with Applications to Early Brain Development},
+  author={Zhou, Hang and Zhou, Yidong and Deoni, Sean and O'Muircheartaigh, Jonathan and Bruchhage, Muriel and M{\"u}ller, Hans-Georg},
+  journal={Submitted},
+  year={2025},
+  hidden={true},
+  abstract={Non-Euclidean data is becoming increasingly common in scientific research, and understanding the distribution of such random objects is a crucial task in many applied fields, including economics, biology, and neuroscience. In this paper, we propose a novel methodology for constructing centrality regions for random objects based on longitudinal observations. Leveraging conditional distance profiles that uniquely characterize the distribution of random objects, we extend the notion of centrality scores to the longitudinal setting. The core contribution lies in a new splitting procedure for the split conformal algorithm, which offers two key advantages: first, it pools information from repeated measurements in the training set to more accurately estimate distance profiles and score functions; second, it guarantees the exchangeability of the score function within the conformal framework and ensures optimal efficiency. We study the asymptotic behavior of the proposed estimators and establish the asymptotic conditional validity for the centrality regions under mild regularity conditions. We demonstrate the effectiveness of the proposed method for the RESONANCE cohort with a focus on the developing brain for young children, as reflected by longitudinal MRI brain image recordings. The new method makes it possible to uncover patterns in early brain development and aid in the detection of neurodevelopmental abnormalities in children.},
+  bibtex_show={true},
+}
+
+@article{chen:23:2,
+  title={Sliced {W}asserstein Regression},
+  author={Chen, Han and Zhou, Yidong and M{\"u}ller, Hans-Georg},
+  journal={arXiv preprint arXiv:2306.10601},
+  year={2023},
+  arxiv={arXiv:2306.10601},
+  hidden={true},
+  abstract={While statistical modeling of distributional data has gained increased attention, the case of multivariate distributions has been somewhat neglected despite its relevance in various applications. This is because the Wasserstein distance, commonly used in distributional data analysis, poses challenges for multivariate distributions. A promising alternative is the sliced Wasserstein distance, which offers a computationally simpler solution. We propose distributional regression models with multivariate distributions as responses paired with Euclidean vector predictors. The foundation of our methodology is a slicing transform from the multivariate distribution space to the sliced distribution space for which we establish a theoretical framework, with the Radon transform as a prominent example. We introduce and study the asymptotic properties of sample-based estimators for two regression approaches, one based on utilizing the sliced Wasserstein distance directly in the multivariate distribution space, and a second approach based on a new slice-wise distance, employing a univariate distribution regression for each slice. Both global and local Fréchet regression methods are deployed for these approaches and illustrated in simulations and through applications. These include the joint distribution of excess winter death rates and winter temperature anomalies in European countries as a function of base winter temperature, and also data from finance.},
   bibtex_show={true},
 }
