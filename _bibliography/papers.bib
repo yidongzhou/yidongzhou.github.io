@@ -145,7 +145,7 @@
   author={Iao*, Su I and Zhou*, Yidong and M{\"u}ller, Hans-Georg},
   journal={Journal of the American Statistical Association},
   year={2025},
-  volume={just accepted},
+  note={in press},
   html={https://doi.org/10.1080/01621459.2025.2507982},
   arxiv={2407.21407},
   abstract={Advancements in modern science have led to the increasing availability of non-Euclidean data in metric spaces. This paper addresses the challenge of modeling relationships between non-Euclidean responses and multivariate Euclidean predictors. We propose a flexible regression model capable of handling high-dimensional predictors without imposing parametric assumptions. Two primary challenges are addressed: the curse of dimensionality in nonparametric regression and the absence of linear structure in general metric spaces. The former is tackled using deep neural networks, while for the latter we demonstrate the feasibility of mapping the metric space where responses reside to a low-dimensional Euclidean space using manifold learning. We introduce a reverse mapping approach, employing local F{\'e}chet regression, to map the low-dimensional manifold representations back to objects in the original metric space. We develop a theoretical framework, investigating the convergence rate of deep neural networks under dependent sub-Gaussian noise with bias. The convergence rate of the proposed regression model is then obtained by expanding the scope of local F{\'e}chet regression to accommodate multivariate predictors in the presence of errors in predictors. Simulations and case studies show that the proposed model outperforms existing methods for non-Euclidean responses, focusing on the special cases of probability measures and networks.},
@@ -183,14 +183,18 @@
   bibtex_show={true},
 }
 
-@article{zhou:25,
+@inproceedings{zhou:25,
   title={Fr{\'e}chet Geodesic Boosting},
   author={Zhou*, Yidong and Iao*, Su I and M{\"u}ller, Hans-Georg},
-  journal={Submitted},
+  booktitle={Advances in Neural Information Processing Systems},
+  editor={D. Belgrave and C. Zhang and L Montoya and H.T. Lin and N. Chen and M. Ghassemi and P. Koniusz and R. Pascanu},
   year={2025},
-  hidden={true},
+  note={in press},
   abstract={Gradient boosting has become a cornerstone of machine learning, enabling base learners such as decision trees to achieve exceptional predictive performance. While existing algorithms primarily handle scalar or Euclidean outputs, increasingly prevalent complex-structured data, such as distributions, networks, and manifold-valued responses, present challenges for traditional methods. Such non-Euclidean data lack algebraic structures such as addition, subtraction, or scalar multiplication required by standard gradient boosting frameworks. To address these challenges, we introduce \textit{Fr{\'e}chet geodesic boosting} (FGBoost), a novel approach tailored for responses residing in geodesic metric spaces. FGBoost leverages geodesics as proxies for residuals and constructs ensembles in a way that respects the intrinsic geometry of the response space. Through theoretical analysis, extensive simulations, and real-world applications, we demonstrate the strong performance and adaptability of FGBoost, showcasing its potential for modeling complex data.},
+  abbr={NeurIPS},
   bibtex_show={true},
+  preview={fgboost.pdf},
+  hidden={true}
 }
 
 @article{zhou:25:7,
@@ -198,9 +202,10 @@
   author={Zhou*, Yidong and Iao*, Su I and M{\"u}ller, Hans-Georg},
   journal={Submitted},
   year={2025},
-  hidden={true},
   abstract={Many modern applications involve predicting structured, non-Euclidean outputs such as probability distributions, networks, and symmetric positive-definite matrices. These outputs are naturally modeled as elements of general metric spaces, where classical regression techniques that rely on vector space structure no longer apply. We introduce SWiFt, an end-to-end framework for regression with outputs in general metric spaces. SWiFt performs prediction via a weighted Fr{\'e}chet means over training outputs, where the weights are learned by a neural network conditioned on the input. This approach avoids Euclidean embeddings and parametric assumptions, while preserving the intrinsic geometry of the output space. We establish theoretical guarantees including a universal approximation theorem and convergence analysis under entropy-regularized training. Empirical results on both synthetic and real datasets demonstrate that SWiFt achieves state-of-the-art performance across a range of non-Euclidean output types.},
   bibtex_show={true},
+  preview={swift.png},
+  hidden={true}
 }
 
 @article{zhou:25:2,
@@ -218,21 +223,23 @@
 @article{zhou:25:3,
   title={Non-{E}uclidean Data Analysis With Metric Statistics},
   author={Song*, Wookyeong and Zhou*, Hang and Zhou*, Yidong and M{\"u}ller, Hans-Georg},
-  journal={Submitted},
+  journal={Harvard Data Science Review},
   year={2025},
   hidden={true},
   abstract={In classical data analysis, the atoms of data are scalars, vectors or functions, which typically are considered to be elements of a vector space. The classical approach falls short for data where the data atoms are random objects located in metric spaces for which linear operations are not available. Examples of practical interest are samples of distributions, networks, covariance matrices or trees; these objects reside in spaces that do not possess linear structure, so that even elementary operations such as addition cannot be executed. In this article we showcase applications of some recently developed tools for such data, including measures of location and spread, regression, depth and quantiles.},
   bibtex_show={true},
 }
 
-@article{zhou:25:4,
+@inproceedings{zhou:25:4,
   title={Wasserstein Transfer Learning},
   author={Zhang*, Kaicheng and Zhang*, Sinian and Zhou†, Doudou and Zhou†, Yidong},
-  journal={arXiv preprint arXiv:2505.17404},
+  booktitle={Advances in Neural Information Processing Systems},
+  editor={D. Belgrave and C. Zhang and L Montoya and H.T. Lin and N. Chen and M. Ghassemi and P. Koniusz and R. Pascanu},
   year={2025},
+  note={in press},
   arxiv={arXiv:2505.17404},
   abstract={Transfer learning is a powerful paradigm for leveraging knowledge from source domains to enhance learning in a target domain. However, traditional transfer learning approaches often focus on scalar or multivariate data within Euclidean spaces, limiting their applicability to complex data structures such as probability distributions. To address this, we introduce a novel framework for transfer learning in regression models, where outputs are probability distributions residing in the Wasserstein space. When the informative subset of transferable source domains is known, we propose an estimator with provable asymptotic convergence rates, quantifying the impact of domain similarity on transfer efficiency. For cases where the informative subset is unknown, we develop a data-driven transfer learning procedure designed to mitigate negative transfer. The proposed methods are supported by rigorous theoretical analysis and are validated through extensive simulations and real-world applications.},
-  abbr={arXiv},
+  abbr={NeurIPS},
   preview={watl.jpg},
   bibtex_show={true},
 }
