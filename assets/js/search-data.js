@@ -16,13 +16,6 @@ ninja.data = [{
           handler: () => {
             window.location.href = "/publications/";
           },
-        },{id: "nav-software",
-          title: "💻 Software",
-          description: "",
-          section: "Navigation",
-          handler: () => {
-            window.location.href = "/software/";
-          },
         },{id: "nav-teaching",
           title: "👨‍🏫 Teaching",
           description: "",
@@ -36,6 +29,13 @@ ninja.data = [{
           section: "Navigation",
           handler: () => {
             window.location.href = "/awards/";
+          },
+        },{id: "nav-software",
+          title: "💻 Software",
+          description: "",
+          section: "Navigation",
+          handler: () => {
+            window.location.href = "/software/";
           },
         },{id: "post-a-post-with-image-galleries",
       
@@ -397,8 +397,8 @@ ninja.data = [{
           description: "",
           section: "News",handler: () => {
               window.location.href = "/news/announcement_2/";
-            },},{id: "news-a-simple-inline-announcement-with-markdown-emoji-sparkles-smile",
-          title: 'A simple inline announcement with Markdown emoji! :sparkles: :smile:',
+            },},{id: "news-two-papers-fréchet-geodesic-boosting-and-wasserstein-transfer-learning-were-accepted-by-neurips-2025-sparkles",
+          title: 'Two papers (Fréchet Geodesic Boosting and Wasserstein Transfer Learning) were accepted by NeurIPS...',
           description: "",
           section: "News",},{id: "projects-project-1",
           title: 'project 1',
