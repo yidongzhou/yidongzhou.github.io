@@ -3,13 +3,14 @@ layout: page
 permalink: /teaching/
 title: 👨‍🏫 Teaching
 nav: true
-nav_order: 4
+nav_order: 3
 ---
 
-### Instructor
-- **[Applied Statistics for Biological Sciences](https://statistics.ucdavis.edu/expanded-descriptions/100)** (STA 100, undergraduate level) <br>
-  University of California, Davis, [Summer 2023](https://github.com/yidongzhou/STA-100-Applied-Statistics-for-Biological-Sciences), [Syllabus](/assets/pdf/STA100/syllabus.pdf){:target="_blank" rel="noopener noreferrer"} <br>
-  *Course Description*: Descriptive statistics, probability, sampling distributions, estimation, hypothesis testing, contingency tables, ANOVA, regression; implementation of statistical methods using computer package.
+### Instructor, University of California, Davis
+- **[STA 100 - Applied Statistics for Biological Sciences](https://statistics.ucdavis.edu/expanded-descriptions/100)** ([Summer 2023](https://github.com/yidongzhou/STA-100-Applied-Statistics-for-Biological-Sciences), [Syllabus](/assets/pdf/STA100/syllabus.pdf){:target="_blank" rel="noopener noreferrer"}) <br>
+  A foundational undergraduate course for students in biological sciences and pre-med tracks. <br>
+  **Topics**: Descriptive statistics, probability, estimation, hypothesis testing, ANOVA, and regression using R. <br>
+  **Teaching evaluation**: 4.5/5.
   - [Installing R and RStudio](/assets/pdf/STA100/Installing-R-RStudio.pdf){:target="_blank" rel="noopener noreferrer"}, [R Markdown](/assets/pdf/STA100/RMarkdown.pdf){:target="_blank" rel="noopener noreferrer"}, [Loading data](/assets/pdf/STA100/R-Loading-Data.pdf){:target="_blank" rel="noopener noreferrer"}
   - Chapter 1. Data and Distributions <br>
     [Slides](/assets/pdf/STA100/Ch1.slides.html){:target="_blank" rel="noopener noreferrer"}, [Handouts](/assets/pdf/STA100/Ch1.pdf){:target="_blank" rel="noopener noreferrer"}
@@ -37,14 +38,16 @@ nav_order: 4
     [Slides](/assets/pdf/STA100/Ch12.slides.html){:target="_blank" rel="noopener noreferrer"}, [Handouts](/assets/pdf/STA100/Ch12.pdf){:target="_blank" rel="noopener noreferrer"}, [Homework](/assets/pdf/STA100/hw5.pdf){:target="_blank" rel="noopener noreferrer"}, [Solutions](/assets/pdf/STA100/sol5.pdf){:target="_blank" rel="noopener noreferrer"}
   - [Final](/assets/pdf/STA100/final.pdf){:target="_blank" rel="noopener noreferrer"}, [Formula Sheet](/assets/pdf/STA100/formulaSheet.pdf){:target="_blank" rel="noopener noreferrer"}
 
-### Teaching Assistant
-- **[Data & Web Technologies for Data Analysis](https://statistics.sf.ucdavis.edu/sta-220-data-web-technologies-data-analysis)** (STA 220, graduate level) <br>
-  University of California, Davis, [Winter 2021](https://github.com/yidongzhou/STA-220-WQ-2021), [Winter 2022](https://github.com/yidongzhou/STA-220-WQ-2022)
-- **[Applied Statistical Methods: Regression Analysis](https://statistics.ucdavis.edu/expanded-descriptions/108)** (STA 108, undergraduate level) <br>
-  University of California, Davis, [Spring 2021](https://github.com/yidongzhou/STA-108B-SQ-2021)
-- **[Analysis of Categorical Data](https://statistics.ucdavis.edu/expanded-descriptions/138)** (STA 138, undergraduate level) <br>
-  University of California, Davis, [Fall 2020](https://github.com/yidongzhou/STA-138-FQ-2020)
-- **[Applied Statistics for Biological Sciences](https://statistics.ucdavis.edu/expanded-descriptions/100)** (STA 100, undergraduate level) <br>
-  University of California, Davis, Fall 2019, Winter 2020, [Spring 2020](https://github.com/yidongzhou/STA-100-A04-SQ-2020)
+### Teaching Assistant, University of California, Davis
+- **[STA 220 - Data & Web Technologies for Data Analysis](https://statistics.sf.ucdavis.edu/sta-220-data-web-technologies-data-analysis)** (graduate level) <br>
+  [Winter 2021](https://github.com/yidongzhou/STA-220-WQ-2021), [Winter 2022](https://github.com/yidongzhou/STA-220-WQ-2022)
+- **[STA 108 - Applied Statistical Methods: Regression Analysis](https://statistics.ucdavis.edu/expanded-descriptions/108)** (undergraduate level) <br>
+  [Spring 2021](https://github.com/yidongzhou/STA-108B-SQ-2021)
+- **[STA 138 - Analysis of Categorical Data](https://statistics.ucdavis.edu/expanded-descriptions/138)** (undergraduate level) <br>
+  [Fall 2020](https://github.com/yidongzhou/STA-138-FQ-2020)
+- **[STA 100 - Applied Statistics for Biological Sciences](https://statistics.ucdavis.edu/expanded-descriptions/100)** (undergraduate level) <br>
+  Fall 2019, Winter 2020, [Spring 2020](https://github.com/yidongzhou/STA-100-A04-SQ-2020)
+
+### Teaching Assistant, University of Science and Technology of China
 - **Computer Programming in C** (undergraduate level) <br>
-  University of Science and Technology of China, Spring 2017
+  Spring 2017
