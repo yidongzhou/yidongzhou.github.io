@@ -1,7 +1,7 @@
 ---
 layout: page
 permalink: /awards/
-title: Awards & Service
+title: 🏆 Awards & Service
 nav: true
 nav_order: 4
 ---
