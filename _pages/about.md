@@ -11,6 +11,7 @@ profile:
   more_info: >
     <p>📍 Davis, CA 95616, USA</p>
     <p>📧 ydzhou (at) ucdavis.edu</p>
+    <p>📄 [Curriculum Vitae](/assets/pdf/CV_Yidong.pdf)</p>
 
 selected_papers: true # includes a list of papers marked as "selected={true}"
 social: false # includes social icons at the bottom of the page
