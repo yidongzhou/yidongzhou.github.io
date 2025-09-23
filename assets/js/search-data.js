@@ -24,7 +24,7 @@ ninja.data = [{
             window.location.href = "/teaching/";
           },
         },{id: "nav-awards-amp-service",
-          title: "Awards &amp; Service",
+          title: "🏆 Awards &amp; Service",
           description: "",
           section: "Navigation",
           handler: () => {
@@ -389,16 +389,11 @@ ninja.data = [{
           window.location.href = "/blog/2015/formatting-and-links/";
         
       },
-    },{id: "news-a-simple-inline-announcement",
-          title: 'A simple inline announcement.',
+    },{id: "news-thrilled-to-announce-that-our-paper-deep-fréchet-regression-has-been-accepted-for-publication-in-the-journal-of-the-american-statistical-association-in-this-work-we-develop-a-deep-learning-framework-for-fréchet-regression-enabling-flexible-modeling-of-complex-regression-relationships-where-responses-are-random-objects-in-general-metric-spaces",
+          title: 'Thrilled to announce that our paper, Deep Fréchet Regression, has been accepted for...',
           description: "",
-          section: "News",},{id: "news-a-long-announcement-with-details",
-          title: 'A long announcement with details',
-          description: "",
-          section: "News",handler: () => {
-              window.location.href = "/news/announcement_2/";
-            },},{id: "news-two-papers-fréchet-geodesic-boosting-and-wasserstein-transfer-learning-were-accepted-by-neurips-2025-sparkles",
-          title: 'Two papers (Fréchet Geodesic Boosting and Wasserstein Transfer Learning) were accepted by NeurIPS...',
+          section: "News",},{id: "news-i-am-delighted-to-share-that-two-of-our-papers-have-been-accepted-for-presentation-at-neurips-2025-fréchet-geodesic-boosting-we-introduce-fgboost-a-gradient-boosting-framework-designed-to-intrinsically-model-complex-regression-relationships-with-non-euclidean-outputs-in-geodesic-metric-spaces-wasserstein-transfer-learning-we-propose-a-novel-transfer-learning-framework-for-regression-where-outputs-are-probability-distributions-residing-in-the-wasserstein-space",
+          title: 'I am delighted to share that two of our papers have been accepted...',
           description: "",
           section: "News",},{id: "projects-project-1",
           title: 'project 1',
