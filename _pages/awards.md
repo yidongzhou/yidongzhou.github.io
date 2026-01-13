@@ -50,3 +50,5 @@ nav_order: 4
   - USTC Conference on Frontiers of Statistics, Hefei, China, Jul. 2025
   - The 3rd Joint Conference on Statistics and Data Science in China, Hangzhou, China, Jul. 2025 (*invited*)
   - Joint Statistical Meeting, Nashville, TN, Aug. 2025
+- End-to-End Deep Learning for Predicting Metric Space-Valued Outputs
+  - INFORMS Optimization Society conference, Atlanta, GA, Mar. 2026. (*Invited*)
