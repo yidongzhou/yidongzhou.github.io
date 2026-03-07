@@ -33,4 +33,4 @@ latest_posts:
 
 🤝 I am always open to collaborations and enthusiastic about exploring new research directions. Feel free to reach out if you're interested in working together!
 
-🚀 **I am on the academic job market for the 2025-2026 cycle and would be happy to discuss any opportunities!**
+🎉 **I will join the [School of Statistics](https://cla.umn.edu/statistics) at the University of Minnesota as a tenure-track Assistant Professor starting in Fall 2026.**
