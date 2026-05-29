@@ -5,4 +5,4 @@ inline: true
 related_posts: false
 ---
 
-Thrilled to announce that our paper, [Deep Single-Index Fréchet Regression](https://github.com/ChopinMQ/Deep-Single-Index-Frechet-Regression), has been accepted to **ICML 2026**. In this work, we propose DeSI, a semiparametric deep single-index framework for Fréchet regression with metric space-valued outputs and high-dimensional inputs.
+Happy to share that [Deep Single-Index Fréchet Regression](https://icml.cc/virtual/2026/poster/63963) was accepted to **ICML 2026**!
