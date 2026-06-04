@@ -17,7 +17,7 @@ nav_order: 4
 ### 📝 Service
 - Reviewer:
   - Journal: Annals of Statistics, Journal of the Royal Statistical Society Series B: Statistical Methodology, Journal of the American Statistical Association, Journal of Machine Learning Research, Biometrics, Journal of Business & Economic Statistics, Journal of Computational and Graphical Statistics, Electronic Journal of Statistics, Bernoulli, Scandinavian Journal of Statistics, Computational Statistics & Data Analysis, Econometrics and Statistics
-  - Conference: NeurIPS 2024, ICLR 2025, AISTATS 2025, ICML 2025, NeurIPS 2025
+  - Conference: NeurIPS 2024, ICLR 2025, AISTATS 2025, ICML 2025, NeurIPS 2025, NeurIPS 2026
 - Conference Organization:
   - Chair, "Functional and Longitudinal Modeling" session, International Conference on Statistics and Data Science, Vancouver, Canada, Jun. 2025
   - Organizer, "Innovations in Causal Inference and Statistical Methods for Complex Data Structures" session, ICSA China Conference, Zhuhai, China, Jun. 2025
