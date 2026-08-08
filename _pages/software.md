@@ -1,7 +1,10 @@
 ---
 layout: page
 permalink: /software/
-title: 💻 Software
+title: Software
+nav_title: Software
+eyebrow: Open source
+description: R packages for functional data analysis and statistics in metric spaces.
 nav: true
 nav_order: 5
 ---
@@ -24,7 +27,7 @@ nav_order: 5
   - ```bibtex
     @Manual{frechet,
       title = {frechet: Statistical Analysis for Random Objects and Non-Euclidean Data},
-      author = {Chen, Yaqing and Zhou, Yidong and Chen, Han and Gajardo, {\'A}lvaro and Fan, Jianing and Zhong, Q and Dubey, P and Han, Kyunghee and Bhattacharjee, S and Zhu, Changbo and Iao, Su I and Kundu, Poorbita and Petersen, Alexander and M{\"u}ller, Hans-Georg},
+      author = {Chen, Yaqing and Zhou, Yidong and Chen, Han and Gajardo, {\'A}lvaro and Fan, Jianing and Zhong, Qixian and Dubey, Paromita and Han, Kyunghee and Bhattacharjee, Satarupa and Petersen, Alexander and M{\"u}ller, Hans-Georg},
       year = {2023},
       note = {R package version 0.3.0},
       url = {https://CRAN.R-project.org/package=frechet},

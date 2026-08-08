@@ -1,0 +1,12 @@
+{% assign album = include.album %}
+{% assign cover_path = album.url | append: album.cover %}
+<article class="photo-card">
+  <a class="photo-card-image" href="{{ album.url | relative_url }}">
+    {% include figure.liquid path=cover_path alt=album.cover_alt loading="lazy" width=album.cover_width height=album.cover_height sizes="(min-width: 992px) 340px, (min-width: 600px) 46vw, 94vw" %}
+  </a>
+  <div class="photo-card-copy">
+    {% if album.location %}<div class="photo-card-meta"><span>{{ album.location }}</span><span>{{ album.date | date: '%Y' }}</span></div>{% endif %}
+    <h3><a href="{{ album.url | relative_url }}">{{ album.title }}</a></h3>
+    {% if album.description %}<p>{{ album.description }}</p>{% endif %}
+  </div>
+</article>

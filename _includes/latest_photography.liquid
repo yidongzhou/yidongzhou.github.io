@@ -1,0 +1,10 @@
+{% assign albums = site.photography | where_exp: 'album', 'album.published != false' | sort: 'date' | reverse %}
+{% if albums.size > 0 %}
+  <div class="photo-card-grid photo-card-grid--home">
+    {% for album in albums limit: 3 %}{% include photo_card.liquid album=album %}{% endfor %}
+  </div>
+{% else %}
+  <div class="photography-teaser">
+    <p>A new home for occasional photo essays from hikes and travels. Albums are organized as lightweight, data-driven entries, so publishing the next one takes only an image folder and a short Markdown file.</p>
+  </div>
+{% endif %}

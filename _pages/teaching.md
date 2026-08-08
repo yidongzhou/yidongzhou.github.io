@@ -1,7 +1,10 @@
 ---
 layout: page
 permalink: /teaching/
-title: 👨‍🏫 Teaching
+title: Teaching
+nav_title: Teaching
+eyebrow: Education
+description: Courses and teaching materials in statistics, data science, and computing.
 nav: true
 nav_order: 3
 ---
@@ -13,29 +16,29 @@ nav_order: 3
   **Teaching evaluation**: 4.5/5.
   - [Installing R and RStudio](/assets/pdf/STA100/Installing-R-RStudio.pdf){:target="_blank" rel="noopener noreferrer"}, [R Markdown](/assets/pdf/STA100/RMarkdown.pdf){:target="_blank" rel="noopener noreferrer"}, [Loading data](/assets/pdf/STA100/R-Loading-Data.pdf){:target="_blank" rel="noopener noreferrer"}
   - Chapter 1. Data and Distributions <br>
-    [Slides](/assets/pdf/STA100/Ch1.slides.html){:target="_blank" rel="noopener noreferrer"}, [Handouts](/assets/pdf/STA100/Ch1.pdf){:target="_blank" rel="noopener noreferrer"}
+    [Handouts](/assets/pdf/STA100/Ch1.pdf){:target="_blank" rel="noopener noreferrer"}
   - Chapter 2. Descriptive Statistics <br>
-    [Slides](/assets/pdf/STA100/Ch2.slides.html){:target="_blank" rel="noopener noreferrer"}, [Handouts](/assets/pdf/STA100/Ch2.pdf){:target="_blank" rel="noopener noreferrer"}, [Homework](/assets/pdf/STA100/hw1.pdf){:target="_blank" rel="noopener noreferrer"}, [Solutions](/assets/pdf/STA100/sol1.pdf){:target="_blank" rel="noopener noreferrer"}
+    [Handouts](/assets/pdf/STA100/Ch2.pdf){:target="_blank" rel="noopener noreferrer"}, [Homework](/assets/pdf/STA100/hw1.pdf){:target="_blank" rel="noopener noreferrer"}, [Solutions](/assets/pdf/STA100/sol1.pdf){:target="_blank" rel="noopener noreferrer"}
   - Chapter 3. Probability <br>
-    [Slides](/assets/pdf/STA100/Ch3.slides.html){:target="_blank" rel="noopener noreferrer"}, [Handouts](/assets/pdf/STA100/Ch3.pdf){:target="_blank" rel="noopener noreferrer"}
+    [Handouts](/assets/pdf/STA100/Ch3.pdf){:target="_blank" rel="noopener noreferrer"}
   - Chapter 4. The Normal Distribution <br>
-    [Slides](/assets/pdf/STA100/Ch4.slides.html){:target="_blank" rel="noopener noreferrer"}, [Handouts](/assets/pdf/STA100/Ch4.pdf){:target="_blank" rel="noopener noreferrer"}
+    [Handouts](/assets/pdf/STA100/Ch4.pdf){:target="_blank" rel="noopener noreferrer"}
   - Chapter 5. Sampling Distribution <br>
-    [Slides](/assets/pdf/STA100/Ch5.slides.html){:target="_blank" rel="noopener noreferrer"}, [Handouts](/assets/pdf/STA100/Ch5.pdf){:target="_blank" rel="noopener noreferrer"}, [Homework](/assets/pdf/STA100/hw2.pdf){:target="_blank" rel="noopener noreferrer"}, [Solutions](/assets/pdf/STA100/sol2.pdf){:target="_blank" rel="noopener noreferrer"}
+    [Handouts](/assets/pdf/STA100/Ch5.pdf){:target="_blank" rel="noopener noreferrer"}, [Homework](/assets/pdf/STA100/hw2.pdf){:target="_blank" rel="noopener noreferrer"}, [Solutions](/assets/pdf/STA100/sol2.pdf){:target="_blank" rel="noopener noreferrer"}
   - Chapter 6. Confidence Intervals <br>
-    [Slides](/assets/pdf/STA100/Ch6.slides.html){:target="_blank" rel="noopener noreferrer"}, [Handouts](/assets/pdf/STA100/Ch6.pdf){:target="_blank" rel="noopener noreferrer"}
+    [Handouts](/assets/pdf/STA100/Ch6.pdf){:target="_blank" rel="noopener noreferrer"}
   - Chapter 7. Comparison of Two Independent Samples <br>
-    [Slides](/assets/pdf/STA100/Ch7.slides.html){:target="_blank" rel="noopener noreferrer"}, [Handouts](/assets/pdf/STA100/Ch7.pdf){:target="_blank" rel="noopener noreferrer"}
+    [Handouts](/assets/pdf/STA100/Ch7.pdf){:target="_blank" rel="noopener noreferrer"}
   - Chapter 8. Comparison of Paired Samples <br>
-    [Slides](/assets/pdf/STA100/Ch8.slides.html){:target="_blank" rel="noopener noreferrer"}, [Handouts](/assets/pdf/STA100/Ch8.pdf){:target="_blank" rel="noopener noreferrer"}, [Homework](/assets/pdf/STA100/hw3.pdf){:target="_blank" rel="noopener noreferrer"}, [Solutions](/assets/pdf/STA100/sol3.pdf){:target="_blank" rel="noopener noreferrer"}
+    [Handouts](/assets/pdf/STA100/Ch8.pdf){:target="_blank" rel="noopener noreferrer"}, [Homework](/assets/pdf/STA100/hw3.pdf){:target="_blank" rel="noopener noreferrer"}, [Solutions](/assets/pdf/STA100/sol3.pdf){:target="_blank" rel="noopener noreferrer"}
   - Chapter 9. Categorical Data <br>
-    [Slides](/assets/pdf/STA100/Ch9.slides.html){:target="_blank" rel="noopener noreferrer"}, [Handouts](/assets/pdf/STA100/Ch9.pdf){:target="_blank" rel="noopener noreferrer"}
+    [Handouts](/assets/pdf/STA100/Ch9.pdf){:target="_blank" rel="noopener noreferrer"}
   - Chapter 10. Analysis of Categorical Data: Relationships <br>
-    [Slides](/assets/pdf/STA100/Ch10.slides.html){:target="_blank" rel="noopener noreferrer"}, [Handouts](/assets/pdf/STA100/Ch10.pdf){:target="_blank" rel="noopener noreferrer"}, [Homework](/assets/pdf/STA100/hw4.pdf){:target="_blank" rel="noopener noreferrer"}, [Solutions](/assets/pdf/STA100/sol4.pdf){:target="_blank" rel="noopener noreferrer"}
+    [Handouts](/assets/pdf/STA100/Ch10.pdf){:target="_blank" rel="noopener noreferrer"}, [Homework](/assets/pdf/STA100/hw4.pdf){:target="_blank" rel="noopener noreferrer"}, [Solutions](/assets/pdf/STA100/sol4.pdf){:target="_blank" rel="noopener noreferrer"}
   - Chapter 11. Comparing the Means of Many Independent Samples <br>
-    [Slides](/assets/pdf/STA100/Ch11.slides.html){:target="_blank" rel="noopener noreferrer"}, [Handouts](/assets/pdf/STA100/Ch11.pdf){:target="_blank" rel="noopener noreferrer"}
+    [Handouts](/assets/pdf/STA100/Ch11.pdf){:target="_blank" rel="noopener noreferrer"}
   - Chapter 12. Comparing the Means of Many Independent Samples <br>
-    [Slides](/assets/pdf/STA100/Ch12.slides.html){:target="_blank" rel="noopener noreferrer"}, [Handouts](/assets/pdf/STA100/Ch12.pdf){:target="_blank" rel="noopener noreferrer"}, [Homework](/assets/pdf/STA100/hw5.pdf){:target="_blank" rel="noopener noreferrer"}, [Solutions](/assets/pdf/STA100/sol5.pdf){:target="_blank" rel="noopener noreferrer"}
+    [Handouts](/assets/pdf/STA100/Ch12.pdf){:target="_blank" rel="noopener noreferrer"}, [Homework](/assets/pdf/STA100/hw5.pdf){:target="_blank" rel="noopener noreferrer"}, [Solutions](/assets/pdf/STA100/sol5.pdf){:target="_blank" rel="noopener noreferrer"}
   - [Final](/assets/pdf/STA100/final.pdf){:target="_blank" rel="noopener noreferrer"}, [Formula Sheet](/assets/pdf/STA100/formulaSheet.pdf){:target="_blank" rel="noopener noreferrer"}
 
 ### Teaching Assistant, University of California, Davis

@@ -1,80 +1,81 @@
 ---
 layout: default
 ---
-<div class="post">
-  <header class="post-header">
-    <h1 class="post-title">
-      {% if site.title == 'blank' %}
-        <span class="font-weight-bold">{{ site.first_name }}</span> {{ site.middle_name }}
-        {{ site.last_name }}
-      {% else %}
-        {{ site.title }}
-      {% endif %}
-    </h1>
-    <p class="desc">{{ page.subtitle }}</p>
-  </header>
+<div class="home-page">
+  <section class="home-hero" aria-labelledby="home-title">
+    <div class="hero-copy">
+      <p class="hero-kicker">{{ page.hero_eyebrow }}</p>
+      <h1 id="home-title">Yidong Zhou</h1>
+      <p class="hero-lead">{{ page.hero_intro }}</p>
+      <p class="hero-role">{{ page.subtitle }}</p>
+      <div class="hero-actions">
+        <a href="{{ '/publications/' | relative_url }}">Publications <span aria-hidden="true">→</span></a>
+        <a href="https://scholar.google.com/citations?user={{ site.data.socials.scholar_userid }}">Google Scholar <span aria-hidden="true">↗</span></a>
+      </div>
+      <div class="hero-links" aria-label="Professional profiles">
+        <a href="https://orcid.org/{{ site.data.socials.orcid_id }}">ORCID</a>
+        <a href="https://github.com/{{ site.data.socials.github_username }}">GitHub</a>
+        <a href="https://www.linkedin.com/in/{{ site.data.socials.linkedin_username }}">LinkedIn</a>
+      </div>
+    </div>
 
-  <article>
-    {% if page.profile %}
-      <div class="profile float-{% if page.profile.align == 'left' %}left{% else %}right{% endif %}">
-        {% if page.profile.image %}
+    {% if page.profile and page.profile.image %}
+      <figure class="hero-portrait">
+        <div class="portrait-frame">
           {% assign profile_image_path = page.profile.image | prepend: 'assets/img/' %}
-          {% if page.profile.image_circular %}
-            {% assign profile_image_class = 'img-fluid z-depth-1 rounded-circle' %}
-          {% else %}
-            {% assign profile_image_class = 'img-fluid z-depth-1
-      rounded' %}
-          {% endif %}
-          {% capture sizes %}(min-width: {{ site.max_width }}) {{ site.max_width | minus: 30 | times: 0.3}}px, (min-width: 576px)
-      30vw, 95vw"{% endcapture %}
-          {%
-            include figure.liquid loading="eager" path=profile_image_path class=profile_image_class sizes=sizes alt=page.profile.image
-            cache_bust=true
-          %}
-        {% endif %}
-        {% if page.profile.more_info %}
-          <div class="more-info">{{ page.profile.more_info }}</div>
-        {% endif %}
+          {% include figure.liquid loading="eager" fetchpriority="high" path=profile_image_path class="portrait-image" width="1080" height="1080" sizes="(min-width: 992px) 390px, (min-width: 576px) 360px, 86vw" alt=page.profile.image_alt cache_bust=true %}
+        </div>
+        <figcaption>University of Minnesota · ydzhou (at) umn.edu</figcaption>
+      </figure>
+    {% endif %}
+  </section>
+
+  {% if page.featured_event %}
+    <aside class="conference-feature" aria-labelledby="featured-event-title">
+      <div class="conference-feature-meta">
+        <span class="conference-feature-label">Upcoming conference</span>
+        <time datetime="{{ page.featured_event.start_date }}">{{ page.featured_event.dates }}</time>
+        <span>{{ page.featured_event.location }}</span>
       </div>
-    {% endif %}
+      <div class="conference-feature-copy">
+        <h2 id="featured-event-title">
+          <a href="{{ page.featured_event.url }}">{{ page.featured_event.title }}</a>
+        </h2>
+        <p>{{ page.featured_event.description }}</p>
+      </div>
+      <a class="conference-feature-link" href="{{ page.featured_event.url }}">
+        Conference website <span aria-hidden="true">↗</span>
+      </a>
+    </aside>
+  {% endif %}
 
-    <div class="clearfix">{{ content }}</div>
+  {{ content }}
 
-    <!-- News -->
-    {% if page.announcements and page.announcements.enabled %}
-      <h2>
-        <a href="{{ '/news/' | relative_url }}" style="color: inherit">News</a>
-      </h2>
-      {% include news.liquid limit=true %}
-    {% endif %}
+  {% if page.announcements and page.announcements.enabled %}
+    <section class="home-section" aria-labelledby="news-heading">
+      <div class="section-heading">
+        <h2 id="news-heading">News</h2>
+        <a class="section-link" href="{{ '/news/' | relative_url }}">All news <span aria-hidden="true">→</span></a>
+      </div>
+      {% include news.liquid %}
+    </section>
+  {% endif %}
 
-    <!-- Latest posts -->
-    {% if page.latest_posts and page.latest_posts.enabled %}
-      <h2>
-        <a href="{{ '/blog/' | relative_url }}" style="color: inherit">Latest Posts</a>
-      </h2>
-      {% include latest_posts.liquid %}
-    {% endif %}
-
-    <!-- Selected papers -->
-    {% if page.selected_papers %}
-      <h2>
-        <a href="{{ '/publications/' | relative_url }}" style="color: inherit">Selected Publications</a>
-      </h2>
+  {% if page.selected_papers %}
+    <section class="home-section featured-publications" aria-labelledby="selected-heading">
+      <div class="section-heading">
+        <h2 id="selected-heading">Selected publications</h2>
+        <a class="section-link" href="{{ '/publications/' | relative_url }}">Full publication list <span aria-hidden="true">→</span></a>
+      </div>
       {% include selected_papers.liquid %}
-    {% endif %}
+    </section>
+  {% endif %}
 
-    <!-- Social -->
-    {% if page.social %}
-      <div class="social">
-        <div class="contact-icons">{% include social.liquid %}</div>
-
-        <div class="contact-note">{{ site.contact_note }}</div>
-      </div>
-    {% endif %}
-
-    {% if site.newsletter and site.newsletter.enabled and site.footer_fixed %}
-      {% include newsletter.liquid center=true %}
-    {% endif %}
-  </article>
+  <section class="home-section" aria-labelledby="photography-heading">
+    <div class="section-heading">
+      <h2 id="photography-heading">Photography</h2>
+      <a class="section-link" href="{{ '/photography/' | relative_url }}">View locations <span aria-hidden="true">→</span></a>
+    </div>
+    {% include latest_photography.liquid %}
+  </section>
 </div>

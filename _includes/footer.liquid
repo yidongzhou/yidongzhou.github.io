@@ -1,35 +1,16 @@
-{% if site.footer_fixed %}
-  <footer class="fixed-bottom" role="contentinfo">
-    <div class="container mt-0">
-      &copy; Copyright {{ site.time | date: '%Y' }}
-      {{ site.first_name }}
-      {{ site.middle_name }}
-      {{ site.last_name }}. {{ site.footer_text }}
-      {% if site.impressum_path %}
-        <a href="{{ site.url }}{{ site.baseurl }}{{ site.impressum_path }}">Impressum</a>.
-      {% endif %}
-      {% if site.last_updated %}
-        Last updated: {{ 'now' | date: '%B %d, %Y' }}.
-      {% endif %}
+<footer class="site-footer" role="contentinfo">
+  <div class="container footer-grid">
+    <div>
+      <a class="footer-name" href="{{ '/' | relative_url }}">Yidong Zhou</a>
+      <p>{{ site.footer_text }}</p>
     </div>
-  </footer>
-{% else %}
-  <footer class="sticky-bottom mt-5" role="contentinfo">
-    {% if site.newsletter.enabled %}
-      {% include newsletter.liquid %}
-    {% endif %}
-
-    <div class="container">
-      &copy; Copyright {{ site.time | date: '%Y' }}
-      {{ site.first_name }}
-      {{ site.middle_name }}
-      {{ site.last_name }}. {{ site.footer_text }}
-      {% if site.impressum_path %}
-        <a href="{{ site.url }}{{ site.baseurl }}{{ site.impressum_path }}">Impressum</a>.
-      {% endif %}
-      {% if site.last_updated %}
-        Last updated: {{ 'now' | date: '%B %d, %Y' }}.
-      {% endif %}
+    <div class="footer-meta">
+      <div class="footer-links">
+        <a href="{{ '/publications/' | relative_url }}">Publications</a>
+        <a href="{{ '/news/' | relative_url }}">News</a>
+        <a href="{{ '/photography/' | relative_url }}">Photography</a>
+      </div>
+      <p>&copy; {{ site.time | date: '%Y' }}{% if site.last_updated %} · Updated {{ 'now' | date: '%B %Y' }}{% endif %}</p>
     </div>
-  </footer>
-{% endif %}
+  </div>
+</footer>

@@ -2,30 +2,24 @@
 layout: default
 ---
 {% if page._styles %}
-  <!-- Page/Post style -->
-  <style type="text/css">
-    {{ page._styles }}
-  </style>
+  <style type="text/css">{{ page._styles }}</style>
 {% endif %}
 
-<div class="post">
-  <header class="post-header">
-    <h1 class="post-title">{{ page.title }}</h1>
-    <p class="post-description">{{ page.description }}</p>
+<article class="page-shell">
+  <header class="page-hero">
+    {% if page.eyebrow %}<p class="eyebrow">{{ page.eyebrow }}</p>{% endif %}
+    <h1>{{ page.title }}</h1>
+    {% if page.description %}<p class="page-lead">{{ page.description }}</p>{% endif %}
   </header>
 
-  <article>
+  <div class="page-content{% if page.wide_content %} page-content--wide{% endif %}">
     {{ content }}
-  </article>
+  </div>
 
   {% if page.related_publications %}
-    <h2>References</h2>
-    <div class="publications">
-      {% bibliography --cited_in_order %}
-    </div>
+    <section class="page-section">
+      <h2>References</h2>
+      <div class="publications">{% bibliography --cited_in_order %}</div>
+    </section>
   {% endif %}
-
-  {% if site.giscus and page.giscus_comments %}
-    {% include giscus.liquid %}
-  {% endif %}
-</div>
+</article>
