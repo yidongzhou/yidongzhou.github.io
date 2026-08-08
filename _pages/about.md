@@ -1,36 +1,68 @@
 ---
 layout: about
-title: About
+title: Home
 permalink: /
-subtitle: Postdoctoral Scholar, <a href='https://statistics.ucdavis.edu/'>Department of Statistics</a>, <a href='https://www.ucdavis.edu/'>University of California, Davis</a>.
-
+hero_eyebrow: Metric statistics · causal inference · machine learning
+subtitle: >
+  Assistant Professor in Statistics at the
+  <a href="https://cla.umn.edu/statistics">University of Minnesota</a>
+hero_intro: >
+  I develop statistical methods for random objects, including distributions,
+  networks, functional data, and data on manifolds. My work focuses on Fréchet
+  regression, causal inference, and machine learning in metric spaces.
 profile:
-  align: right
-  image: prof_pic0.jpg
-  image_circular: false # crops the image to make it circular
-  more_info: >
-    <p>📍 Davis, CA 95616, USA</p>
-    <p>📧 ydzhou (at) umn.edu</p>
-    <!-- <p>📄 <a href="/assets/pdf/CV_Yidong.pdf" target="_blank" rel="noopener noreferrer">Curriculum Vitae</a></p> -->
+  image: profile/prof_pic0.jpg
+  image_alt: Portrait of Yidong Zhou outdoors
+featured_event:
+  title: "Statistics Beyond Euclid: Functional Data, Random Objects and AI"
+  dates: "November 12–14, 2026"
+  start_date: "2026-11-12"
+  location: "UC Davis · Davis, California"
+  description: >
+    I am helping organize this conference on functional data, random objects,
+    and geometry-aware machine learning.
+  url: "https://anson.ucdavis.edu/statisticsbeyondeuclid/"
 
-selected_papers: true # includes a list of papers marked as "selected={true}"
-social: false # includes social icons at the bottom of the page
-
+selected_papers: true
 announcements:
-  enabled: true # includes a list of news items
-  scrollable: true # adds a vertical scroll bar if there are more than 3 news items
-  limit: 5 # leave blank to include all the news in the `_news` folder
-
-latest_posts:
-  enabled: false
-  scrollable: true # adds a vertical scroll bar if there are more than 3 new posts items
-  limit: 3 # leave blank to include all the blog posts
+  enabled: true
 ---
 
-👋 Hi! I'm Yidong Zhou, a postdoctoral scholar in the [Department of Statistics](https://statistics.ucdavis.edu/) at the [University of California, Davis](https://www.ucdavis.edu/), working with Professor [Hans-Georg Müller](https://anson.ucdavis.edu/~mueller/). I received my Ph.D. in Statistics from the [University of California, Davis](https://www.ucdavis.edu/) in March 2024, also under his guidance. Before that, I earned my B.S. in Statistics from the [University of Science and Technology of China](https://en.ustc.edu.cn/) in 2019. In addition to my academic research, I gained industry experience as a summer intern at Amazon in 2022.
+<section class="home-section home-about" aria-labelledby="about-heading">
+  <div class="section-heading"><h2 id="about-heading">About</h2></div>
+  <div class="about-grid">
+    <p class="about-intro">I am an Assistant Professor in the <a href="https://cla.umn.edu/statistics">School of Statistics at the University of Minnesota</a>. I received my Ph.D. in Statistics from UC Davis in 2024, advised by Professor <a href="https://anson.ucdavis.edu/~mueller/">Hans-Georg Müller</a>, and my B.S. in Statistics from the University of Science and Technology of China in 2019.</p>
+    <div class="about-detail">
+      <p>My research concerns statistical modeling and inference for random objects in metric spaces. Examples include probability distributions, networks, functional observations, compositions, and positive-definite matrices. I develop methods that account for their intrinsic geometry and recover familiar statistical procedures in Euclidean settings.</p>
+      <p>My current work centers on Fréchet regression, causal inference for structured outcomes, functional data analysis, and geometry-aware learning. Applications include longitudinal studies, neuroimaging and child development, economics and policy evaluation, and plant genomics. Before joining Minnesota, I was a postdoctoral scholar at UC Davis. I was also a research intern at Amazon in 2022.</p>
+    </div>
+  </div>
+</section>
 
-🔍 My research develops statistical methodologies that harness the **intrinsic geometric structure** of complex data. As modern data collection expands beyond traditional settings, new challenges arise in analyzing structured data types, including probability distributions, networks, trees, functional data, and data residing on manifolds such as compositional data and symmetric positive-definite matrices. Due to the **lack of algebraic operations** such as addition, subtraction, or scalar multiplication, conventional statistical methods designed for Euclidean spaces often fail to capture the geometry and dependencies intrinsic to these data. My work addresses this gap by designing statistical models that are intrinsically aligned with the data's geometric structure, encompassing **causal inference**, **deep learning**, and **Fréchet regression**. These approaches facilitate robust inference and learning across diverse applications, including longitudinal studies, social science, and biomedical research.
+<section class="home-section" aria-labelledby="research-heading">
+  <div class="section-heading"><h2 id="research-heading">Research</h2></div>
+  <div class="research-list">
+    <article>
+      <h3>Fréchet regression</h3>
+      <p>Regression methods for random objects in general metric spaces, including distributions, networks, and manifold-valued data.</p>
+    </article>
+    <article>
+      <h3>Causal inference</h3>
+      <p>Causal estimands and study designs for structured outcomes, including difference-in-differences, regression discontinuity, and synthetic control.</p>
+    </article>
+    <article>
+      <h3>Statistical learning</h3>
+      <p>Scalable methods for metric-space-valued data, including deep regression, boosting, transfer learning, and metric learning.</p>
+    </article>
+    <article>
+      <h3>Functional data analysis</h3>
+      <p>Models for longitudinal trajectories and sparsely observed functional data, with applications in biomedical and population studies.</p>
+    </article>
+  </div>
+</section>
 
-🤝 I am always open to collaborations and enthusiastic about exploring new research directions. Feel free to reach out if you're interested in working together!
-
-🎉 **I will join the [School of Statistics](https://cla.umn.edu/statistics) at the University of Minnesota as a tenure-track Assistant Professor starting in Fall 2026.**
+<aside class="collaboration-note">
+  <h2>Collaboration</h2>
+  <p>I welcome collaborations on methodological and applied problems involving structured, longitudinal, and non-Euclidean data.</p>
+  <a href="mailto:ydzhou@umn.edu">Get in touch <span aria-hidden="true">→</span></a>
+</aside>

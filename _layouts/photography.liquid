@@ -1,0 +1,25 @@
+---
+layout: default
+---
+<article class="photo-essay">
+  <header class="photo-essay-header">
+    <a class="back-link" href="{{ '/photography/' | relative_url }}"><span aria-hidden="true">←</span> Photography</a>
+    <p class="eyebrow">Photo essay</p>
+    <h1>{{ page.title }}</h1>
+    {% if page.description %}<p class="page-lead">{{ page.description }}</p>{% endif %}
+    <div class="photo-essay-meta">
+      {% if page.location %}<span>{{ page.location }}</span>{% endif %}
+      {% if page.camera %}<span>{{ page.camera }}{% if page.lens %} · {{ page.lens }}{% endif %}</span>{% endif %}
+    </div>
+  </header>
+
+  {% if page.cover %}
+    {% assign cover_path = page.url | append: page.cover %}
+    <div class="photo-essay-cover">
+      {% include figure.liquid path=cover_path alt=page.cover_alt loading="eager" fetchpriority="high" width=page.cover_width height=page.cover_height sizes="(min-width: 1120px) 1120px, 96vw" %}
+    </div>
+  {% endif %}
+
+  {% if content != blank %}<div class="photo-essay-story">{{ content }}</div>{% endif %}
+  {% include photo_gallery.liquid %}
+</article>
