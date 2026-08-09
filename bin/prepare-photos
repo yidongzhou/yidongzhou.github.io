@@ -1,0 +1,235 @@
+#!/usr/bin/env ruby
+# frozen_string_literal: true
+
+require "fileutils"
+require "open3"
+require "optparse"
+require "pathname"
+require "tmpdir"
+
+options = { max_edge: 2400, quality: 82 }
+
+parser = OptionParser.new do |opts|
+  opts.banner = "Usage: bin/prepare-photos [options] SOURCE_DIR ALBUM_SLUG"
+  opts.separator ""
+  opts.separator "Create web-ready JPEGs in _photography/ALBUM_SLUG and update index.md dimensions."
+  opts.separator "SOURCE_DIR may be the album folder itself when optimizing existing photographs."
+  opts.separator ""
+  opts.on("--max-edge PIXELS", Integer, "Longest edge (default: 2400)") do |value|
+    options[:max_edge] = value
+  end
+  opts.on("--quality PERCENT", Integer, "JPEG quality (default: 82)") do |value|
+    options[:quality] = value
+  end
+  opts.on("-h", "--help", "Show this help") do
+    puts opts
+    exit
+  end
+end
+
+parser.parse!
+abort parser.to_s unless ARGV.length == 2
+abort "--max-edge must be a positive integer" unless options[:max_edge].positive?
+abort "--quality must be between 1 and 100" unless (1..100).cover?(options[:quality])
+
+source_dir = Pathname.new(ARGV[0]).expand_path
+album_slug = ARGV[1]
+abort "Album slugs may contain only lowercase letters, numbers, and hyphens" unless album_slug.match?(/\A[a-z0-9]+(?:-[a-z0-9]+)*\z/)
+abort "Source folder does not exist: #{source_dir}" unless source_dir.directory?
+
+repo_root = Pathname.new(__dir__).join("..").realpath
+album_dir = repo_root.join("_photography", album_slug)
+index_path = album_dir.join("index.md")
+abort "Create #{index_path.relative_path_from(repo_root)} before preparing photographs" unless index_path.file?
+
+sips = Pathname.new("/usr/bin/sips")
+srgb_profile = Pathname.new("/System/Library/ColorSync/Profiles/sRGB Profile.icc")
+abort "This command currently requires macOS /usr/bin/sips" unless sips.executable?
+abort "The macOS sRGB profile could not be found" unless srgb_profile.file?
+
+def find_executable(name)
+  ENV.fetch("PATH", "").split(File::PATH_SEPARATOR).filter_map do |directory|
+    candidate = Pathname.new(directory).join(name)
+    candidate.to_s if candidate.file? && candidate.executable?
+  end.first
+end
+
+def run!(*command)
+  stdout, stderr, status = Open3.capture3(*command.map(&:to_s))
+  return stdout if status.success?
+
+  warn stderr unless stderr.empty?
+  abort "Command failed: #{command.join(' ')}"
+end
+
+def image_dimensions(sips, path)
+  output = run!(sips, "-g", "pixelWidth", "-g", "pixelHeight", path)
+  width = output[/pixelWidth:\s+(\d+)/, 1]&.to_i
+  height = output[/pixelHeight:\s+(\d+)/, 1]&.to_i
+  abort "Could not read dimensions for #{path}" unless width&.positive? && height&.positive?
+
+  [width, height]
+end
+
+def exif_orientation(path)
+  data = path.binread
+  return 1 unless data.start_with?("\xFF\xD8".b)
+
+  offset = 2
+  while offset + 4 < data.bytesize
+    break unless data.getbyte(offset) == 0xFF
+
+    marker = data.getbyte(offset + 1)
+    break if marker == 0xDA || marker == 0xD9
+
+    length = data.byteslice(offset + 2, 2)&.unpack1("n")
+    break unless length && length >= 2
+
+    payload = data.byteslice(offset + 4, length - 2)
+    if marker == 0xE1 && payload&.start_with?("Exif\0\0".b)
+      tiff = payload.byteslice(6..)
+      little_endian = tiff&.byteslice(0, 2) == "II"
+      big_endian = tiff&.byteslice(0, 2) == "MM"
+      return 1 unless little_endian || big_endian
+
+      uint16 = ->(bytes) { bytes&.unpack1(little_endian ? "v" : "n") }
+      uint32 = ->(bytes) { bytes&.unpack1(little_endian ? "V" : "N") }
+      ifd_offset = uint32.call(tiff.byteslice(4, 4))
+      return 1 unless ifd_offset
+
+      entry_count = uint16.call(tiff.byteslice(ifd_offset, 2))
+      return 1 unless entry_count
+
+      entry_count.times do |index|
+        entry = tiff.byteslice(ifd_offset + 2 + (index * 12), 12)
+        next unless entry&.bytesize == 12 && uint16.call(entry.byteslice(0, 2)) == 0x0112
+
+        orientation = uint16.call(entry.byteslice(8, 2))
+        return orientation if (1..8).cover?(orientation)
+      end
+    end
+
+    offset += length + 2
+  end
+
+  1
+rescue Errno::ENOENT, NoMethodError
+  1
+end
+
+def update_album_dimensions(index_path, dimensions)
+  content = index_path.read
+  cover = content[/^cover:\s*["']?([^"'\n]+)["']?\s*$/, 1]
+  current_file = nil
+
+  updated = content.lines.map do |line|
+    if line.match?(/^cover_width:/) && cover && dimensions[cover]
+      "cover_width: #{dimensions.fetch(cover).first}\n"
+    elsif line.match?(/^cover_height:/) && cover && dimensions[cover]
+      "cover_height: #{dimensions.fetch(cover).last}\n"
+    elsif (match = line.match(/^(\s*)-\s+file:\s*["']?([^"'\n]+)["']?\s*$/))
+      current_file = match[2]
+      line
+    elsif current_file && (match = line.match(/^(\s*)width:\s*\d+\s*$/)) && dimensions[current_file]
+      "#{match[1]}width: #{dimensions.fetch(current_file).first}\n"
+    elsif current_file && (match = line.match(/^(\s*)height:\s*\d+\s*$/)) && dimensions[current_file]
+      replacement = "#{match[1]}height: #{dimensions.fetch(current_file).last}\n"
+      current_file = nil
+      replacement
+    else
+      line
+    end
+  end.join
+
+  index_path.write(updated) if updated != content
+end
+
+images = source_dir.children.select do |path|
+  path.file? && %w[.jpg .jpeg].include?(path.extname.downcase)
+end.sort_by { |path| path.basename.to_s.downcase }
+
+abort "No JPEG photographs found in #{source_dir}" if images.empty?
+
+jpegtran = find_executable("jpegtran")
+abort "jpegtran was not found. Install jpeg-turbo before preparing photographs." unless jpegtran
+
+original_bytes = images.sum(&:size)
+dimensions = {}
+prepared = []
+
+Dir.mktmpdir("prepare-photos-") do |temporary_dir|
+  temporary_dir = Pathname.new(temporary_dir)
+
+  images.each_with_index do |source, index|
+    basename = source.basename.to_s
+    source_profile = temporary_dir.join("source-#{index}.icc")
+    sanitized = temporary_dir.join("sanitized-#{index}.jpg")
+    tagged = temporary_dir.join("tagged-#{index}.jpg")
+    resized = temporary_dir.join("resized-#{index}.jpg")
+    stripped = temporary_dir.join("stripped-#{index}.jpg")
+    final = temporary_dir.join("final-#{index}.jpg")
+
+    orientation = exif_orientation(source)
+    transform = {
+      1 => [],
+      2 => ["-flip", "horizontal"],
+      3 => ["-rotate", "180"],
+      4 => ["-flip", "vertical"],
+      5 => ["-transpose"],
+      6 => ["-rotate", "90"],
+      7 => ["-transverse"],
+      8 => ["-rotate", "270"]
+    }.fetch(orientation)
+
+    # Extract the source profile before removing EXIF, GPS, gain maps, and other
+    # application markers. Reattach it temporarily so ColorSync can convert the
+    # sanitized pixels accurately to sRGB.
+    run!(sips, "-x", source_profile, source)
+    run!(jpegtran, "-copy", "none", "-optimize", *transform, "-outfile", sanitized, source)
+    run!(sips, "-e", source_profile, sanitized, "--out", tagged)
+
+    run!(
+      sips,
+      "-m", srgb_profile,
+      "-Z", options[:max_edge].to_s,
+      "-s", "format", "jpeg",
+      "-s", "formatOptions", options[:quality].to_s,
+      tagged,
+      "--out", resized
+    )
+
+    run!(jpegtran, "-copy", "none", "-optimize", "-outfile", stripped, resized)
+    run!(sips, "-e", srgb_profile, stripped, "--out", final)
+
+    width, height = image_dimensions(sips, final)
+    abort "Unexpected dimensions for #{basename}" if [width, height].max > options[:max_edge]
+
+    dimensions[basename] = [width, height]
+    prepared << [final, album_dir.join(basename), basename, final.size]
+  end
+
+  prepared.each do |final, destination, _basename, _size|
+    FileUtils.cp(final, destination)
+  end
+end
+
+update_album_dimensions(index_path, dimensions)
+
+optimized_bytes = prepared.sum { |entry| entry.last }
+saved_percent = ((1 - optimized_bytes.fdiv(original_bytes)) * 100).round(1)
+
+prepared.each do |_final, _destination, basename, size|
+  width, height = dimensions.fetch(basename)
+  puts format("%-32s %4d × %-4d %6.2f MB", basename, width, height, size.fdiv(1024 * 1024))
+end
+
+puts
+puts format(
+  "Prepared %d photographs: %.1f MB → %.1f MB (%s%% smaller)",
+  prepared.length,
+  original_bytes.fdiv(1024 * 1024),
+  optimized_bytes.fdiv(1024 * 1024),
+  saved_percent
+)
+puts "Updated #{index_path.relative_path_from(repo_root)}"
+puts "Removed embedded metadata and restored the sRGB profile."
