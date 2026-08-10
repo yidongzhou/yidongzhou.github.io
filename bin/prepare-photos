@@ -188,10 +188,13 @@ Dir.mktmpdir("prepare-photos-") do |temporary_dir|
     run!(jpegtran, "-copy", "none", "-optimize", *transform, "-outfile", sanitized, source)
     run!(sips, "-e", source_profile, sanitized, "--out", tagged)
 
+    tagged_width, tagged_height = image_dimensions(sips, tagged)
+    resize_edge = [options[:max_edge], [tagged_width, tagged_height].max].min
+
     run!(
       sips,
       "-m", srgb_profile,
-      "-Z", options[:max_edge].to_s,
+      "-Z", resize_edge.to_s,
       "-s", "format", "jpeg",
       "-s", "formatOptions", options[:quality].to_s,
       tagged,

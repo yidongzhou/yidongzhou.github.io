@@ -12,6 +12,7 @@ Each place is one self-contained folder. Its photographs and `index.md` stay tog
 
    The command normalizes camera orientation, converts JPEGs to sRGB, limits the long edge to 2400 px, uses JPEG quality 82, removes embedded metadata, and updates the dimensions already listed in `index.md`. The source photographs are never modified. Use `--max-edge` or `--quality` only when an album needs different settings.
 4. Fill in the title, date, location, cover, and optional camera/lens. Write specific alt text for every photograph; captions are optional. Orientation is inferred from the dimensions. Use a landscape 3:2 photograph for the album cover because location cards use that ratio; add `layout: wide` to any image that should span both gallery columns.
+   - Most albums use a single `photos:` list. For a larger set within one place, use `photo_sections:` and give each section a `title`, optional `description`, and its own `photos:` list. This keeps subalbums such as wildlife and hummingbirds inside the same place folder.
 5. Add a short narrative below the front matter.
 6. Preview locally with `bundle exec jekyll serve`. When ready, change to `published: true`, commit, and push. Albums appear newest-first on the Photography page and the homepage automatically.
 
