@@ -11,6 +11,8 @@ cover_width: 2400
 cover_height: 1600
 tags: [Yunnan, mountains, hiking]
 featured: true
+home_featured: true
+home_order: 2
 published: true
 photos:
   - file: "ice-lake.JPG"
