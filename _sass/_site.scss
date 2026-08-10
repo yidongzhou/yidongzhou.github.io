@@ -251,8 +251,8 @@ p.eyebrow {
 
 .footer-grid {
   display: grid;
-  grid-template-columns: 1fr auto;
-  gap: 2rem;
+  grid-template-columns: minmax(0, 1fr) 150px auto;
+  gap: clamp(1.5rem, 4vw, 3.5rem);
   align-items: end;
 }
 
@@ -283,6 +283,49 @@ p.eyebrow {
   color: var(--site-muted);
   font-size: 0.82rem;
   font-weight: 500;
+}
+
+.footer-visitor-map {
+  margin: 0;
+  width: 100%;
+  max-width: 150px;
+  justify-self: center;
+}
+
+.footer-visitor-map-link {
+  display: block;
+  overflow: hidden;
+  line-height: 0;
+  background: var(--site-accent);
+  opacity: 0.68;
+  transition: opacity 160ms ease;
+}
+
+.footer-visitor-map-link:hover,
+.footer-visitor-map-link:focus-visible {
+  opacity: 1;
+}
+
+.footer-visitor-map-link img {
+  display: block;
+  width: 100% !important;
+  max-width: 100%;
+  height: auto !important;
+  border: 0;
+}
+
+.site-footer .footer-visitor-map figcaption {
+  margin-top: 0.28rem;
+  color: var(--site-faint);
+  font-size: 0.68rem;
+  line-height: 1.25;
+}
+
+.footer-visitor-map figcaption a {
+  color: inherit;
+  text-decoration: underline;
+  text-decoration-color: var(--site-line-strong);
+  text-underline-offset: 0.16em;
 }
 
 /* Homepage */
@@ -1168,6 +1211,11 @@ p.eyebrow {
   .footer-grid {
     grid-template-columns: 1fr;
     gap: 1rem;
+  }
+
+  .footer-visitor-map {
+    max-width: 150px;
+    justify-self: start;
   }
 
   .footer-meta {

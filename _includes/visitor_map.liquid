@@ -1,0 +1,19 @@
+{% if site.visitor_map.enabled and site.visitor_map.token %}
+  <figure class="footer-visitor-map">
+    <a
+      class="footer-visitor-map-link"
+      href="{{ site.visitor_map.stats_url }}"
+      title="View visitor statistics"
+      aria-label="View visitor statistics and approximate locations"
+    >
+      <img
+        src="https://mapmyvisitors.com/map.png?d={{ site.visitor_map.token }}&amp;cl=edf3f8"
+        alt="Map of approximate visitor locations"
+        loading="lazy"
+        width="150"
+        height="74"
+      >
+    </a>
+    <figcaption>Visitors · <a href="{{ '/privacy/' | relative_url }}">Privacy</a></figcaption>
+  </figure>
+{% endif %}

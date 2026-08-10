@@ -43,6 +43,13 @@ enable_google_verification: true
 google_site_verification: fTg53mp9Mkgg9q5ebUjHgzYb2G_cX5YQnQEWCAte7WQ
 enable_bing_verification: false
 
+# Approximate visitor locations shown in the footer
+visitor_map:
+  enabled: true
+  provider: MapMyVisitors
+  token: fPDd9Y_XCoxruQqIV726apGuxLFBV6-Z_rCMCzqG8pc
+  stats_url: https://mapmyvisitors.com/web/1c7f9
+
 # Content
 collections:
   news:
