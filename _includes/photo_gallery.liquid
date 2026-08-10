@@ -1,35 +1,17 @@
-{% if page.photos %}
-  <div class="photo-gallery pswp-gallery" id="photo-gallery">
-    {% for photo in page.photos %}
-      {% unless photo.file == page.cover %}
-        {% assign photo_path = page.url | append: photo.file %}
-        {% assign photo_layout = photo.layout %}
-        {% if photo_layout == blank %}
-          {% if photo.height > photo.width %}
-            {% assign photo_layout = 'portrait' %}
-          {% else %}
-            {% assign photo_layout = 'landscape' %}
-          {% endif %}
-        {% endif %}
-        <figure class="photo-gallery-item photo-gallery-item--{{ photo_layout }}">
-          <a href="{{ photo_path | relative_url }}" data-pswp-width="{{ photo.width }}" data-pswp-height="{{ photo.height }}" target="_blank">
-            <img
-              src="{{ photo_path | relative_url }}"
-              width="{{ photo.width }}"
-              height="{{ photo.height }}"
-              loading="lazy"
-              decoding="async"
-              alt="{{ photo.alt }}"
-            >
-          </a>
-          {% if photo.caption or photo.credit %}
-            <figcaption>
-              {% if photo.caption %}{{ photo.caption }}{% endif %}
-              {% if photo.credit %}<span class="photo-credit">Photo: {% if photo.source_url %}<a href="{{ photo.source_url }}">{{ photo.credit }}</a>{% else %}{{ photo.credit }}{% endif %}{% if photo.license %} · {{ photo.license }}{% endif %}</span>{% endif %}
-            </figcaption>
-          {% endif %}
-        </figure>
-      {% endunless %}
+{% if page.photo_sections %}
+  <div class="photo-subalbums">
+    {% for section in page.photo_sections %}
+      <section class="photo-subalbum" aria-labelledby="photo-subalbum-{{ forloop.index }}">
+        <header class="photo-subalbum-header">
+          <p class="eyebrow">{% if section.eyebrow %}{{ section.eyebrow }}{% else %}Series {{ forloop.index }}{% endif %}</p>
+          <h2 id="photo-subalbum-{{ forloop.index }}">{{ section.title }}</h2>
+          {% if section.description %}<p>{{ section.description }}</p>{% endif %}
+        </header>
+        {% assign gallery_id = 'photo-gallery-' | append: forloop.index %}
+        {% include photo_gallery_items.liquid photos=section.photos cover=page.cover id=gallery_id %}
+      </section>
     {% endfor %}
   </div>
+{% elsif page.photos %}
+  {% include photo_gallery_items.liquid photos=page.photos cover=page.cover id='photo-gallery' %}
 {% endif %}

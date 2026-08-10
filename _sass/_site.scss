@@ -988,6 +988,29 @@ p.eyebrow {
   align-items: start;
 }
 
+.photo-subalbums {
+  display: grid;
+  gap: clamp(3.5rem, 8vw, 6rem);
+}
+
+.photo-subalbum-header {
+  max-width: 650px;
+  margin-bottom: 1.6rem;
+  padding-top: 1.4rem;
+  border-top: 1px solid var(--site-line);
+}
+
+.photo-subalbum-header h2 {
+  margin: 0;
+  font-size: clamp(1.7rem, 3vw, 2.25rem);
+}
+
+.photo-subalbum-header > p:last-child {
+  margin: 0.5rem 0 0;
+  color: var(--site-muted);
+  font-size: 0.88rem;
+}
+
 .photo-gallery-item {
   margin: 0;
 }

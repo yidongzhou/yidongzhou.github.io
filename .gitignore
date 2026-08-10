@@ -4,5 +4,6 @@ _site
 .jekyll-cache
 .jekyll-metadata
 .DS_Store
+.photo-rejects/
 .ruby-version
 vendor
