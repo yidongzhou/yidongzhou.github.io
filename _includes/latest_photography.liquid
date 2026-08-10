@@ -1,7 +1,7 @@
-{% assign albums = site.photography | where_exp: 'album', 'album.published != false' | sort: 'date' | reverse %}
+{% assign albums = site.photography | where_exp: 'album', 'album.published != false' | where: 'home_featured', true | sort: 'home_order' %}
 {% if albums.size > 0 %}
   <div class="photo-card-grid photo-card-grid--home">
-    {% for album in albums limit: 3 %}{% include photo_card.liquid album=album %}{% endfor %}
+    {% for album in albums %}{% include photo_card.liquid album=album %}{% endfor %}
   </div>
 {% else %}
   <div class="photography-teaser">

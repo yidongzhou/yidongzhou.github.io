@@ -18,7 +18,7 @@ wide_content: true
   <div class="section-heading">
     <h2 id="journal-heading">Locations</h2>
   </div>
-  {% assign albums = site.photography | where_exp: 'album', 'album.published != false' | sort: 'date' | reverse %}
+  {% assign albums = site.photography | where_exp: 'album', 'album.published != false' | sort: 'title' %}
   {% if albums.size > 0 %}
     <div class="photo-card-grid">
       {% for album in albums %}{% include photo_card.liquid album=album %}{% endfor %}
@@ -26,7 +26,7 @@ wide_content: true
   {% else %}
     <div class="photo-empty">
       <span class="photo-empty-mark" aria-hidden="true">↗</span>
-      <div><h3>The first essays are on the way.</h3><p>The publishing system is ready; future albums will appear here automatically, newest first.</p></div>
+      <div><h3>The first essays are on the way.</h3><p>The publishing system is ready; future albums will appear here automatically.</p></div>
     </div>
   {% endif %}
 </section>
