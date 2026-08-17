@@ -4,7 +4,7 @@ permalink: /publications/
 title: Publications
 nav_title: Publications
 eyebrow: Research
-description: Research in metric statistics, causal inference, functional data analysis, and statistical learning.
+description: Research in machine learning, causal inference, nonparametric statistics, and functional data analysis, with an emphasis on complex and structured data.
 nav: true
 nav_order: 2
 wide_content: true

@@ -5,19 +5,21 @@ middle_name:
 last_name: Zhou
 description: >
   Academic website of Yidong Zhou, Assistant Professor in Statistics at the
-  University of Minnesota. Research in metric statistics, Fréchet regression,
-  causal inference, functional data analysis, and machine learning.
-footer_text: Statistical methods for random objects and structured data.
+  University of Minnesota. Research in machine learning, causal inference,
+  nonparametric statistics, and functional data analysis, with an emphasis on
+  complex and structured data.
+footer_text: Statistical methods for complex and structured data.
 keywords:
   - Yidong Zhou
   - University of Minnesota
   - Statistics
-  - Metric Statistics
-  - Functional Data Analysis
-  - Random Objects
-  - Fréchet Regression
-  - Causal Inference
   - Machine Learning
+  - Causal Inference
+  - Nonparametric Statistics
+  - Functional Data Analysis
+  - Fréchet Regression
+  - Metric Statistics
+  - Random Objects
 lang: en
 timezone: America/Los_Angeles
 icon: YZ
