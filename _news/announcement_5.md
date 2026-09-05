@@ -5,4 +5,4 @@ category: research
 related_posts: false
 ---
 
-Happy to share that [Deep Single-Index Fréchet Regression](https://icml.cc/virtual/2026/poster/63963) was accepted to **ICML 2026**!
+[Deep Single-Index Fréchet Regression](https://icml.cc/virtual/2026/poster/63963) has been accepted to **ICML 2026**.

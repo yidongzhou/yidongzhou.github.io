@@ -5,4 +5,4 @@ category: research
 related_posts: false
 ---
 
-Thrilled to announce that our paper, [Deep Fréchet Regression](https://doi.org/10.1080/01621459.2025.2507982), has been accepted for publication in the **Journal of the American Statistical Association**. In this work, we develop a deep learning framework for Fréchet regression, enabling flexible modeling of complex regression relationships where responses are random objects in general metric spaces.
+Our paper [Deep Fréchet Regression](https://doi.org/10.1080/01621459.2025.2507982) has been accepted for publication in the **Journal of the American Statistical Association**. It develops a deep learning framework for modeling complex regression relationships when responses are random objects in general metric spaces.

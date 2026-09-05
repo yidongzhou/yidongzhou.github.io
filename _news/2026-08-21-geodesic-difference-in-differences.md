@@ -5,4 +5,4 @@ category: research
 related_posts: false
 ---
 
-I am pleased to share that our paper, [Geodesic Difference-in-Differences](https://arxiv.org/abs/2501.17436), has been accepted for publication in **Biometrika**. The paper develops difference-in-differences methods for structured outcomes, including distributions, networks, and manifold-valued data, with applications to age-at-death distributions and electricity-generation compositions.
+Our paper [Geodesic Difference-in-Differences](https://arxiv.org/abs/2501.17436) will appear in **Biometrika**. It extends difference-in-differences methods to structured outcomes, including distributions, networks, and manifold-valued data, with applications to age-at-death distributions and electricity-generation compositions.
