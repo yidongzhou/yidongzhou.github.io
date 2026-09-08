@@ -5,4 +5,4 @@ category: research
 related_posts: false
 ---
 
-The **Journal of Machine Learning Research** has accepted our paper [Sliced Wasserstein Regression](https://arxiv.org/abs/2306.10601). We develop global and local regression methods for multivariate distributional responses using the sliced Wasserstein distance, with theoretical guarantees and applications to excess winter mortality and financial data.
+The **Journal of Machine Learning Research** has accepted our paper [Sliced Wasserstein Regression](https://www.jmlr.org/papers/v27/24-1780.html). We develop global and local regression methods for multivariate distributional responses using the sliced Wasserstein distance, with theoretical guarantees and applications to excess winter mortality and financial data.
