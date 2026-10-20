@@ -13,16 +13,6 @@ hero_intro: >
 profile:
   image: profile/prof_pic0.jpg
   image_alt: Portrait of Yidong Zhou outdoors
-featured_event:
-  title: "Statistics Beyond Euclid: Functional Data, Random Objects and AI"
-  dates: "November 12–14, 2026"
-  start_date: "2026-11-12"
-  location: "UC Davis · Davis, California"
-  description: >
-    I am helping organize this conference on functional data, random objects,
-    and geometry-aware machine learning.
-  url: "https://anson.ucdavis.edu/statisticsbeyondeuclid/"
-
 selected_papers: true
 announcements:
   enabled: true

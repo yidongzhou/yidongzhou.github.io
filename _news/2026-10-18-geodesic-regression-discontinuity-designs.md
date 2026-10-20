@@ -2,6 +2,7 @@
 date: 2026-10-18 09:00:00-0500
 inline: true
 category: research
+featured: true
 related_posts: false
 ---
 

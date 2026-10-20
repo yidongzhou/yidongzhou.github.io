@@ -1,6 +1,12 @@
-<div class="news-feed" data-news-feed data-archive-months="{{ site.news_archive_months | default: 6 }}">
-  {% if site.news != blank %}
-    {% assign news = site.news | sort: 'date' | reverse %}
+{% assign news = site.news | sort: 'date' | reverse %}
+{% if include.featured_only %}
+  {% assign news = news | where: 'featured', true %}
+{% endif %}
+{% if include.limit %}
+  {% assign news = news | slice: 0, include.limit %}
+{% endif %}
+<div class="news-feed"{% unless include.featured_only %} data-news-feed data-archive-months="{{ site.news_archive_months | default: 6 }}"{% endunless %}>
+  {% if news != blank %}
     <ol class="news-list" data-news-current>
       {% for item in news %}
         <li class="news-item" data-news-date="{{ item.date | date_to_xmlschema }}">
@@ -18,12 +24,16 @@
         </li>
       {% endfor %}
     </ol>
-    <details class="news-archive" data-news-archive hidden>
-      <summary>Earlier news <span data-news-archive-count></span></summary>
-      <ol class="news-list news-list--archive" data-news-archive-list></ol>
-    </details>
+    {% unless include.featured_only %}
+      <details class="news-archive" data-news-archive hidden>
+        <summary>Earlier news <span data-news-archive-count></span></summary>
+        <ol class="news-list news-list--archive" data-news-archive-list></ol>
+      </details>
+    {% endunless %}
   {% else %}
     <p class="empty-state">No news has been posted yet.</p>
   {% endif %}
 </div>
-<script defer src="{{ '/assets/js/news-archive.js' | relative_url | bust_file_cache }}"></script>
+{% unless include.featured_only %}
+  <script defer src="{{ '/assets/js/news-archive.js' | relative_url | bust_file_cache }}"></script>
+{% endunless %}

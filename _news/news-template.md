@@ -2,6 +2,7 @@
 date: 2026-08-07 09:00:00-0700
 inline: true
 category: research # research, life, or travel
+featured: false # set true to include this item among the four homepage updates
 published: false
 related_posts: false
 ---
