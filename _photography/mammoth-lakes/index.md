@@ -3,7 +3,7 @@ title: "Mammoth Lakes"
 slug: "mammoth-lakes"
 permalink: /photography/mammoth-lakes/
 date: 2026-08-07
-description: "Lakes, granite, and the long light of California's Eastern Sierra."
+description: "Hikes and lakes in California's Eastern Sierra."
 location: "Mammoth Lakes, California"
 cover: "hot-creek.JPG"
 cover_alt: "Hot Creek winding through a high-desert canyon beneath the Eastern Sierra"

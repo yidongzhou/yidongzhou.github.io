@@ -8,8 +8,8 @@ layout: default
       <p class="hero-role">{{ page.subtitle }}</p>
       <p class="hero-lead">{{ page.hero_intro }}</p>
       <div class="hero-actions">
-        <a href="{{ '/publications/' | relative_url }}">Publications <span aria-hidden="true">→</span></a>
-        <a href="https://scholar.google.com/citations?user={{ site.data.socials.scholar_userid }}">Google Scholar <span aria-hidden="true">↗</span></a>
+        <a href="{{ '/publications/' | relative_url }}">Publications</a>
+        <a href="https://scholar.google.com/citations?user={{ site.data.socials.scholar_userid }}">Google Scholar</a>
       </div>
       <div class="hero-links" aria-label="Contact and professional profiles">
         <a href="mailto:ydzhou@umn.edu">ydzhou@umn.edu</a>
@@ -38,8 +38,7 @@ layout: default
   <aside class="home-section collaboration-note" aria-labelledby="collaboration-heading">
     <h2 id="collaboration-heading">Students and collaborators</h2>
     <div>
-      <p>I welcome inquiries from prospective students and collaborators interested in methodological and applied problems involving complex, structured, and longitudinal data.</p>
-      <a href="mailto:ydzhou@umn.edu">Get in touch <span aria-hidden="true">→</span></a>
+      <p>If you are interested in working with me, please <a href="mailto:ydzhou@umn.edu">email me</a>. I am happy to discuss both methodological questions and applications involving complex or longitudinal data.</p>
     </div>
   </aside>
 
@@ -49,7 +48,7 @@ layout: default
     <section class="home-section featured-publications" aria-labelledby="selected-heading">
       <div class="section-heading">
         <h2 id="selected-heading">Selected publications</h2>
-        <a class="section-link" href="{{ '/publications/' | relative_url }}">Full publication list <span aria-hidden="true">→</span></a>
+        <a class="section-link" href="{{ '/publications/' | relative_url }}">All publications</a>
       </div>
       {% include selected_papers.liquid %}
     </section>
@@ -59,7 +58,7 @@ layout: default
     <section class="home-section home-updates" aria-labelledby="news-heading">
       <div class="section-heading">
         <h2 id="news-heading">Recent updates</h2>
-        <a class="section-link" href="{{ '/news/' | relative_url }}">All news <span aria-hidden="true">→</span></a>
+        <a class="section-link" href="{{ '/news/' | relative_url }}">All news</a>
       </div>
       {% include news.liquid featured_only=true limit=4 %}
     </section>
@@ -69,7 +68,7 @@ layout: default
     <div class="section-heading">
       <h2 id="photography-heading">Photography</h2>
       <p>Outside research, I enjoy hiking and landscape photography, usually with my camera.</p>
-      <a class="section-link" href="{{ '/photography/' | relative_url }}">View locations <span aria-hidden="true">→</span></a>
+      <a class="section-link" href="{{ '/photography/' | relative_url }}">All photographs</a>
     </div>
     {% include latest_photography.liquid %}
   </section>

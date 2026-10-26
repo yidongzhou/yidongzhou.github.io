@@ -3,7 +3,7 @@ title: "Oʻahu"
 slug: "oahu"
 permalink: /photography/oahu/
 date: 2026-02-14
-description: "Volcanic ridges, windward water, and changing weather across the island."
+description: "Hikes and coastal views on Oʻahu."
 location: "Oʻahu, Hawaiʻi"
 cover: "manana-and-kaohikaipu.JPG"
 cover_alt: "Mānana and Kāohikaipu islets in deep blue water off Oʻahu's windward coast"
@@ -80,5 +80,3 @@ photos:
     height: 1800
     layout: wide
 ---
-
-Trade winds and short showers can change the light within minutes. These photographs follow the island from dry volcanic headlands to the green folds of the Koʻolau Range.

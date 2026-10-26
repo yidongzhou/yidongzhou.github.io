@@ -3,7 +3,7 @@ title: "Costa Rica"
 slug: "costa-rica"
 permalink: /photography/costa-rica/
 date: 2024-12-24
-description: "Rainforest wildlife, cloud-forest birds, and quiet encounters along the trail."
+description: "Wildlife in the rainforests and cloud forests of Costa Rica."
 location: "Costa Rica"
 cover: "keel-billed-toucan.JPG"
 cover_alt: "A keel-billed toucan perched among tropical leaves beneath a clear blue sky"
@@ -16,8 +16,6 @@ home_order: 1
 published: true
 photo_sections:
   - title: "Rainforest wildlife"
-    eyebrow: "Costa Rica"
-    description: "Animals encountered from the forest floor to the canopy."
     photos:
       - file: "keel-billed-toucan.JPG"
         alt: "A keel-billed toucan perched among tropical leaves beneath a clear blue sky"
@@ -96,7 +94,6 @@ photo_sections:
         width: 1800
         height: 2400
   - title: "Hummingbirds"
-    eyebrow: "Highland birds"
     description: "Hummingbirds photographed in the Costa Rican highlands."
     photos:
       - file: "violet-sabrewing.JPG"
@@ -140,5 +137,3 @@ photo_sections:
         width: 2400
         height: 1600
 ---
-
-The forests change quickly with elevation, from lowland heat and night sounds to cooler cloud forest. The wildlife photographs here follow that movement through several regions of the country.

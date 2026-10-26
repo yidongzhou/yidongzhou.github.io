@@ -3,7 +3,6 @@
     {% for section in page.photo_sections %}
       <section class="photo-subalbum" aria-labelledby="photo-subalbum-{{ forloop.index }}">
         <header class="photo-subalbum-header">
-          <p class="eyebrow">{% if section.eyebrow %}{{ section.eyebrow }}{% else %}Series {{ forloop.index }}{% endif %}</p>
           <h2 id="photo-subalbum-{{ forloop.index }}">{{ section.title }}</h2>
           {% if section.description %}<p>{{ section.description }}</p>{% endif %}
         </header>

@@ -12,7 +12,6 @@
         <li class="news-item" data-news-date="{{ item.date | date_to_xmlschema }}">
           <div class="news-meta">
             <time datetime="{{ item.date | date_to_xmlschema }}">{{ item.date | date: '%b %d, %Y' }}</time>
-            {% if item.category %}<span class="news-category">{{ item.category }}</span>{% endif %}
           </div>
           <div class="news-copy">
             {% if include.featured_only and item.home_summary %}

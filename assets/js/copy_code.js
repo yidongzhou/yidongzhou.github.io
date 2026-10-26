@@ -16,10 +16,9 @@ codeBlocks.forEach(function (codeBlock) {
     copyButton.type = "button";
     copyButton.ariaLabel = "Copy code to clipboard";
     copyButton.innerText = "Copy";
-    copyButton.innerHTML = '<i class="fa-solid fa-clipboard"></i>';
 
     // get code from code block and copy to clipboard
-    copyButton.addEventListener("click", function () {
+    copyButton.addEventListener("click", async function () {
       // check if code block has line numbers
       // i.e. `kramdown.syntax_highlighter_opts.block.line_numbers` set to true in _config.yml
       // or using `jekyll highlight` liquid tag with `linenos` option
@@ -31,14 +30,21 @@ codeBlocks.forEach(function (codeBlock) {
         // get code from code block when line numbers are not displayed
         var code = codeBlock.querySelector("code").innerText.trim();
       }
-      window.navigator.clipboard.writeText(code);
-      copyButton.innerText = "Copied";
-      copyButton.innerHTML = '<i class="fa-solid fa-clipboard-check"></i>';
+      try {
+        await window.navigator.clipboard.writeText(code);
+        copyButton.innerText = "Copied";
+      } catch {
+        copyButton.innerText = "Select to copy";
+        const selection = window.getSelection();
+        const range = document.createRange();
+        range.selectNodeContents(codeBlock);
+        selection.removeAllRanges();
+        selection.addRange(range);
+      }
       var waitFor = 3000;
 
       setTimeout(function () {
         copyButton.innerText = "Copy";
-        copyButton.innerHTML = '<i class="fa-solid fa-clipboard"></i>';
       }, waitFor);
     });
 

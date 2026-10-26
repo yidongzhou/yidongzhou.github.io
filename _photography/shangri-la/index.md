@@ -3,7 +3,7 @@ title: "Shangri-La"
 slug: "shangri-la"
 permalink: /photography/shangri-la/
 date: 2026-07-04
-description: "Clouds in Tiger Leaping Gorge and summer meadows on the high plateau."
+description: "Tiger Leaping Gorge and the lakes and meadows around Shangri-La."
 location: "Northwestern Yunnan, China"
 cover: "alpine-lake-shangri-la.JPG"
 cover_alt: "A blue alpine lake below green mountains and bright summer clouds near Shangri-La"
@@ -75,5 +75,3 @@ photos:
     width: 2400
     height: 1600
 ---
-
-The route moves from the steep walls of Tiger Leaping Gorge to the open meadows and lakes around Shangri-La, where summer rain gives way to clear high-altitude light.

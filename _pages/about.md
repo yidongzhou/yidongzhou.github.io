@@ -7,9 +7,8 @@ subtitle: >
   Assistant Professor in Statistics at the
   <a href="https://cla.umn.edu/statistics">University of Minnesota</a>
 hero_intro: >
-  I develop statistical methods for complex and structured data, including
-  distributions, networks, functional data, and data on manifolds. My work
-  spans machine learning, causal inference, and nonparametric statistics.
+  I work on machine learning, causal inference, and nonparametric statistics,
+  with a particular interest in data such as distributions, networks, and curves.
 profile:
   image: profile/prof_pic0.jpg
   image_alt: Portrait of Yidong Zhou outdoors
@@ -27,23 +26,23 @@ background: >
 
 <section class="home-section home-research" aria-labelledby="research-heading">
   <div class="section-heading"><h2 id="research-heading">Research</h2></div>
-  <p class="research-intro">I use the geometry of probability distributions, networks, functions, compositions, and positive-definite matrices to develop statistical models and inference beyond conventional Euclidean settings. Applications include neuroimaging and child development, economics and policy evaluation, and plant genomics.</p>
+  <p class="research-intro">Much of my work uses the geometry of data to guide statistical modeling and inference. I study probability distributions, networks, functions, compositions, and positive-definite matrices, with applications in neuroimaging, child development, economics and policy evaluation, and plant genomics.</p>
   <div class="research-list">
     <article>
       <h3>Machine learning</h3>
-      <p>Machine learning methods for complex outcomes, including neural networks, tree-based methods, and transfer learning.</p>
+      <p>Neural networks, tree-based methods, and transfer learning for complex outcomes.</p>
     </article>
     <article>
       <h3>Causal inference</h3>
-      <p>Causal estimands and study designs for structured outcomes, including difference-in-differences, regression discontinuity, and synthetic control.</p>
+      <p>Causal effects with structured outcomes, with a focus on difference-in-differences, regression discontinuity, and synthetic control.</p>
     </article>
     <article>
       <h3>Nonparametric statistics</h3>
-      <p>Flexible regression and inference for distributional, network, functional, and manifold-valued data, including Fréchet regression.</p>
+      <p>Fréchet regression and inference for distributions, networks, functions, and manifold-valued data.</p>
     </article>
     <article>
       <h3>Functional data analysis</h3>
-      <p>Models for longitudinal trajectories and sparsely observed functional data, with applications in biomedical and population studies.</p>
+      <p>Longitudinal trajectories and sparsely observed functional data, motivated by biomedical and population studies.</p>
     </article>
   </div>
 </section>
