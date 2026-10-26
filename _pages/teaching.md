@@ -19,7 +19,6 @@ nav_order: 3
       <p class="course-title"><a href="https://statistics.ucdavis.edu/expanded-descriptions/100">Applied Statistics for Biological Sciences</a></p>
       <p class="course-description">An undergraduate course for biological sciences and pre-med students, covering descriptive statistics, probability, estimation, hypothesis testing, ANOVA, and regression in R.</p>
       <p class="course-links"><a href="https://github.com/yidongzhou/STA-100-Applied-Statistics-for-Biological-Sciences">Course repository</a><a href="/assets/pdf/STA100/syllabus.pdf" target="_blank" rel="noopener noreferrer">Syllabus</a></p>
-      <p class="course-evaluation">Teaching evaluation: 4.5/5.</p>
       <details class="course-materials" markdown="1">
 <summary>Course materials</summary>
 
