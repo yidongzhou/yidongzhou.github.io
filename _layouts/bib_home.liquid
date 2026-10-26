@@ -1,0 +1,31 @@
+---
+---
+{% if entry.hidden != "true" %}
+{% assign paper_url = null %}
+{% if entry.doi %}
+  {% assign paper_url = entry.doi | prepend: 'https://doi.org/' %}
+{% elsif entry.html %}
+  {% if entry.html contains '://' %}{% assign paper_url = entry.html %}{% else %}{% assign paper_url = entry.html | prepend: '/assets/html/' | relative_url %}{% endif %}
+{% elsif entry.arxiv %}
+  {% assign paper_url = entry.arxiv | prepend: 'https://arxiv.org/abs/' %}
+{% endif %}
+<article class="home-paper" id="{{ entry.key }}">
+  <p class="home-paper-title">{% if paper_url %}<a href="{{ paper_url }}">{{ entry.title }}</a>{% else %}{{ entry.title }}{% endif %}</p>
+  <p class="home-paper-authors">
+    {%- for author in entry.author_array -%}
+      {%- assign author_last = author.last | regex_replace: '[*∗†‡§¶‖&^]', '' -%}
+      {%- capture full_name -%}{{ author.first }} {{ author_last }}{%- endcapture -%}
+      {%- unless forloop.first -%}{% if forloop.length > 2 %}, {% else %} {% endif %}{% if forloop.last %}and {% endif %}{%- endunless -%}
+      {%- if site.scholar.last_name contains author_last and site.scholar.first_name contains author.first -%}<strong>{{ full_name }}</strong>{%- else -%}{{ full_name }}{%- endif -%}
+      {%- if entry.equal_contribution contains full_name -%}<sup>*</sup>{%- endif -%}
+      {%- if entry.corresponding_author contains full_name -%}<sup>†</sup>{%- endif -%}
+    {%- endfor -%}
+  </p>
+  <p class="home-paper-venue"><em>{% if entry.journal %}{{ entry.journal }}{% elsif entry.booktitle %}{{ entry.booktitle }}{% endif %}</em>{% if entry.journal or entry.booktitle %}, {% endif %}{{ entry.year }}{% if entry.note %}. {{ entry.note }}{% endif %}</p>
+  <div class="home-paper-links">
+    {% if paper_url %}<a href="{{ paper_url }}">Paper</a>{% endif %}
+    {% if entry.arxiv %}{% if entry.html or entry.doi %}<a href="https://arxiv.org/abs/{{ entry.arxiv }}">arXiv</a>{% endif %}{% endif %}
+    {% if entry.code %}<a href="{{ entry.code }}">Code</a>{% endif %}
+  </div>
+</article>
+{% endif %}

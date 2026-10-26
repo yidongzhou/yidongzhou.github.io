@@ -14,7 +14,7 @@
     {% include head.liquid %}
   </head>
 
-  <body class="{% if site.navbar_fixed %}fixed-top-nav{% endif %} {% unless site.footer_fixed %}sticky-bottom-footer{% endunless %}">
+  <body class="{% if site.navbar_fixed %}fixed-top-nav{% endif %} {% unless site.footer_fixed %}sticky-bottom-footer{% endunless %} {{ page.body_class | escape }}">
     <a class="skip-link" href="#main-content">Skip to content</a>
     {% include header.liquid %}
 

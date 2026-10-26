@@ -4,15 +4,15 @@ layout: default
 <div class="home-page">
   <section class="home-hero" aria-labelledby="home-title">
     <div class="hero-copy">
-      <p class="hero-kicker">{{ page.hero_eyebrow }}</p>
       <h1 id="home-title">Yidong Zhou</h1>
-      <p class="hero-lead">{{ page.hero_intro }}</p>
       <p class="hero-role">{{ page.subtitle }}</p>
+      <p class="hero-lead">{{ page.hero_intro }}</p>
       <div class="hero-actions">
         <a href="{{ '/publications/' | relative_url }}">Publications <span aria-hidden="true">→</span></a>
         <a href="https://scholar.google.com/citations?user={{ site.data.socials.scholar_userid }}">Google Scholar <span aria-hidden="true">↗</span></a>
       </div>
-      <div class="hero-links" aria-label="Professional profiles">
+      <div class="hero-links" aria-label="Contact and professional profiles">
+        <a href="mailto:ydzhou@umn.edu">ydzhou@umn.edu</a>
         <a href="https://orcid.org/{{ site.data.socials.orcid_id }}">ORCID</a>
         <a href="https://github.com/{{ site.data.socials.github_username }}">GitHub</a>
         <a href="https://www.linkedin.com/in/{{ site.data.socials.linkedin_username }}">LinkedIn</a>
@@ -23,43 +23,27 @@ layout: default
       <figure class="hero-portrait">
         <div class="portrait-frame">
           {% assign profile_image_path = page.profile.image | prepend: 'assets/img/' %}
-          {% include figure.liquid loading="eager" fetchpriority="high" path=profile_image_path class="portrait-image" width="1080" height="1080" sizes="(min-width: 992px) 390px, (min-width: 576px) 360px, 86vw" alt=page.profile.image_alt cache_bust=true %}
+          {% include figure.liquid loading="eager" fetchpriority="high" path=profile_image_path class="portrait-image" width="1080" height="1080" sizes="(min-width: 992px) 260px, (min-width: 600px) 200px, 160px" alt=page.profile.image_alt cache_bust=true %}
         </div>
-        <figcaption>University of Minnesota · ydzhou (at) umn.edu</figcaption>
       </figure>
+    {% endif %}
+    {% if page.biography %}
+      <div class="hero-biography">
+        <p>{{ page.biography }}</p>
+        {% if page.background %}<p>{{ page.background }}</p>{% endif %}
+      </div>
     {% endif %}
   </section>
 
-  {% if page.featured_event %}
-    <aside class="conference-feature" aria-labelledby="featured-event-title">
-      <div class="conference-feature-meta">
-        <span class="conference-feature-label">Upcoming conference</span>
-        <time datetime="{{ page.featured_event.start_date }}">{{ page.featured_event.dates }}</time>
-        <span>{{ page.featured_event.location }}</span>
-      </div>
-      <div class="conference-feature-copy">
-        <h2 id="featured-event-title">
-          <a href="{{ page.featured_event.url }}">{{ page.featured_event.title }}</a>
-        </h2>
-        <p>{{ page.featured_event.description }}</p>
-      </div>
-      <a class="conference-feature-link" href="{{ page.featured_event.url }}">
-        Conference website <span aria-hidden="true">↗</span>
-      </a>
-    </aside>
-  {% endif %}
+  <aside class="home-section collaboration-note" aria-labelledby="collaboration-heading">
+    <h2 id="collaboration-heading">Students and collaborators</h2>
+    <div>
+      <p>I welcome inquiries from prospective students and collaborators interested in methodological and applied problems involving complex, structured, and longitudinal data.</p>
+      <a href="mailto:ydzhou@umn.edu">Get in touch <span aria-hidden="true">→</span></a>
+    </div>
+  </aside>
 
   {{ content }}
-
-  {% if page.announcements and page.announcements.enabled %}
-    <section class="home-section" aria-labelledby="news-heading">
-      <div class="section-heading">
-        <h2 id="news-heading">Recent updates</h2>
-        <a class="section-link" href="{{ '/news/' | relative_url }}">All news <span aria-hidden="true">→</span></a>
-      </div>
-      {% include news.liquid featured_only=true limit=4 %}
-    </section>
-  {% endif %}
 
   {% if page.selected_papers %}
     <section class="home-section featured-publications" aria-labelledby="selected-heading">
@@ -71,9 +55,20 @@ layout: default
     </section>
   {% endif %}
 
-  <section class="home-section" aria-labelledby="photography-heading">
+  {% if page.announcements and page.announcements.enabled %}
+    <section class="home-section home-updates" aria-labelledby="news-heading">
+      <div class="section-heading">
+        <h2 id="news-heading">Recent updates</h2>
+        <a class="section-link" href="{{ '/news/' | relative_url }}">All news <span aria-hidden="true">→</span></a>
+      </div>
+      {% include news.liquid featured_only=true limit=4 %}
+    </section>
+  {% endif %}
+
+  <section class="home-section home-photography" aria-labelledby="photography-heading">
     <div class="section-heading">
       <h2 id="photography-heading">Photography</h2>
+      <p>Outside research, I enjoy hiking and landscape photography, usually with my camera.</p>
       <a class="section-link" href="{{ '/photography/' | relative_url }}">View locations <span aria-hidden="true">→</span></a>
     </div>
     {% include latest_photography.liquid %}

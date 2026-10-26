@@ -2,7 +2,7 @@
 layout: about
 title: Home
 permalink: /
-hero_eyebrow: Machine learning · causal inference · nonparametric statistics
+body_class: academic-home
 subtitle: >
   Assistant Professor in Statistics at the
   <a href="https://cla.umn.edu/statistics">University of Minnesota</a>
@@ -16,21 +16,18 @@ profile:
 selected_papers: true
 announcements:
   enabled: true
+biography: >
+  I received my Ph.D. in Statistics from UC Davis in 2024, advised by
+  Professor <a href="https://anson.ucdavis.edu/~mueller/">Hans-Georg Müller</a>,
+  and my B.S. in Statistics from the University of Science and Technology of China in 2019.
+background: >
+  Before joining Minnesota, I was a postdoctoral scholar at UC Davis.
+  I was also a research intern at Amazon in 2022.
 ---
 
-<section class="home-section home-about" aria-labelledby="about-heading">
-  <div class="section-heading"><h2 id="about-heading">About</h2></div>
-  <div class="about-grid">
-    <p class="about-intro">I am an Assistant Professor in the <a href="https://cla.umn.edu/statistics">School of Statistics at the University of Minnesota</a>. I received my Ph.D. in Statistics from UC Davis in 2024, advised by Professor <a href="https://anson.ucdavis.edu/~mueller/">Hans-Georg Müller</a>, and my B.S. in Statistics from the University of Science and Technology of China in 2019.</p>
-    <div class="about-detail">
-      <p>My research develops statistical models and inferential methods for complex and structured data, including probability distributions, networks, functional observations, compositions, and positive-definite matrices. I use the geometry of these data to develop machine learning, causal inference, and nonparametric methods beyond conventional Euclidean settings.</p>
-      <p>My current work develops machine learning, causal inference, and nonparametric methods for structured outcomes, together with methods for functional and longitudinal data. Applications include neuroimaging and child development, economics and policy evaluation, and plant genomics. Before joining Minnesota, I was a postdoctoral scholar at UC Davis. I was also a research intern at Amazon in 2022.</p>
-    </div>
-  </div>
-</section>
-
-<section class="home-section" aria-labelledby="research-heading">
+<section class="home-section home-research" aria-labelledby="research-heading">
   <div class="section-heading"><h2 id="research-heading">Research</h2></div>
+  <p class="research-intro">I use the geometry of probability distributions, networks, functions, compositions, and positive-definite matrices to develop statistical models and inference beyond conventional Euclidean settings. Applications include neuroimaging and child development, economics and policy evaluation, and plant genomics.</p>
   <div class="research-list">
     <article>
       <h3>Machine learning</h3>
@@ -50,9 +47,3 @@ announcements:
     </article>
   </div>
 </section>
-
-<aside class="collaboration-note">
-  <h2>Students and collaborators</h2>
-  <p>I welcome inquiries from prospective students and collaborators interested in methodological and applied problems involving complex, structured, and longitudinal data.</p>
-  <a href="mailto:ydzhou@umn.edu">Get in touch <span aria-hidden="true">→</span></a>
-</aside>

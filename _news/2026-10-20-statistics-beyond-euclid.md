@@ -3,6 +3,9 @@ date: 2026-10-20 09:00:00-0500
 inline: true
 category: event
 featured: true
+home_summary: >
+  I am helping organize [Statistics Beyond Euclid: Functional Data, Random Objects and AI](https://anson.ucdavis.edu/statisticsbeyondeuclid/)
+  at UC Davis, November 12–14, 2026.
 related_posts: false
 ---
 

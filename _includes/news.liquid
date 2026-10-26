@@ -15,7 +15,9 @@
             {% if item.category %}<span class="news-category">{{ item.category }}</span>{% endif %}
           </div>
           <div class="news-copy">
-            {% if item.inline %}
+            {% if include.featured_only and item.home_summary %}
+              {{ item.home_summary | markdownify }}
+            {% elsif item.inline %}
               {{ item.content | emojify }}
             {% else %}
               <a class="news-title" href="{{ item.url | relative_url }}">{{ item.title }}</a>
