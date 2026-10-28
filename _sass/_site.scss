@@ -1,4 +1,13 @@
 /* Shared academic theme: one type scale, page frame, and set of controls. */
+@font-face {
+  font-family: "Zhi Mang Xing";
+  src: url("../fonts/zhimangxing/name.woff2") format("woff2");
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  unicode-range: U+4E1C, U+5468, U+6613;
+}
+
 :root {
   --site-bg: #ffffff;
   --site-surface: #f3f5f7;
@@ -9,6 +18,7 @@
   --site-accent-soft: #eaf1f7;
   --site-line: #d6dce2;
   --site-display: "Source Serif 4", Georgia, serif;
+  --site-chinese: "Zhi Mang Xing", "Kaiti SC", STKaiti, KaiTi, serif;
   --site-body: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
   --type-small: 16px;
   --type-body: 18px;
@@ -114,7 +124,9 @@ button { font-family: inherit; }
   box-shadow: none; // taste-skill-ignore: explicitly remove inherited Bootstrap shadows.
   opacity: 1;
 }
-.site-brand { display: inline-flex; margin: 0; padding: 0; text-decoration: none; }
+.site-brand { display: inline-flex; align-items: baseline; gap: 12px; margin: 0; padding: 0; text-decoration: none; }
+.name-chinese { color: var(--site-text); font-family: var(--site-chinese); font-weight: 400; letter-spacing: 0; white-space: nowrap; }
+.site-brand .name-chinese { font-size: var(--type-heading); line-height: 1; }
 .brand-name, .footer-name {
   color: var(--site-text);
   font-family: var(--site-display);

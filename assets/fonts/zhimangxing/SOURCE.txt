@@ -1,0 +1,9 @@
+Zhi Mang Xing, version 19 served by Google Fonts.
+Copyright 2018 The Zhi Mang Xing Project Authors.
+License: SIL Open Font License 1.1; see OFL.txt in this directory.
+
+Upstream: https://github.com/google/fonts/tree/main/ofl/zhimangxing
+Description: https://github.com/google/fonts/blob/main/ofl/zhimangxing/DESCRIPTION.en_us.html
+Google Fonts stylesheet: https://fonts.googleapis.com/css2?family=Zhi+Mang+Xing&text=%E5%91%A8%E6%98%93%E4%B8%9C&display=swap
+
+name.woff2 is the Google Fonts text subset for 周易东 (U+5468, U+6613, U+4E1C), downloaded unmodified. It is served locally so visitors do not need this font installed or access to an external font host.

@@ -1,8 +1,10 @@
 <header class="site-header">
   <nav id="navbar" class="navbar navbar-light navbar-expand-lg {% if site.navbar_fixed %}fixed-top{% else %}sticky-top{% endif %}" aria-label="Primary navigation">
     <div class="container">
-      <a class="navbar-brand site-brand" href="{{ '/' | relative_url }}" aria-label="Yidong Zhou, home">
+      <a class="navbar-brand site-brand" href="{{ '/' | relative_url }}">
         <span class="brand-name">Yidong Zhou</span>
+        {% if site.chinese_name %}<span class="name-chinese" lang="zh-Hans">{{ site.chinese_name }}</span>{% endif %}
+        <span class="sr-only">, home</span>
       </a>
 
       <button
