@@ -13,8 +13,6 @@ wide_content: true
   <p class="publication-legend"><strong>*</strong> Equal contribution · <strong>†</strong> Corresponding author</p>
 </div>
 
-{% include bib_search.liquid %}
-
 <div class="publications">
   {% bibliography %}
 </div>

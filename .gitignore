@@ -8,3 +8,5 @@ _site
 .ruby-version
 vendor
 .taste-skill/
+.playwright-cli/
+output/playwright/

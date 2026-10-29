@@ -4,9 +4,11 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="{{ site.third_party_libraries.google_fonts.url.fonts }}">
 <link rel="stylesheet" href="{{ '/assets/css/bootstrap.min.css' | relative_url | bust_file_cache }}">
-<link rel="stylesheet" href="{{ '/assets/css/jekyll-pygments-themes-github.css' | relative_url | bust_file_cache }}" id="highlight_theme_light">
-{% if site.enable_darkmode %}
-  <link rel="stylesheet" href="{{ '/assets/css/jekyll-pygments-themes-native.css' | relative_url | bust_file_cache }}" media="none" id="highlight_theme_dark">
+{% if page.permalink == '/publications/' or page.permalink == '/software/' %}
+  <link rel="stylesheet" href="{{ '/assets/css/jekyll-pygments-themes-github.css' | relative_url | bust_file_cache }}" id="highlight_theme_light">
+  {% if site.enable_darkmode %}
+    <link rel="stylesheet" href="{{ '/assets/css/jekyll-pygments-themes-native.css' | relative_url | bust_file_cache }}" media="none" id="highlight_theme_dark">
+  {% endif %}
 {% endif %}
 
 {% if site.icon.size <= 4 %}

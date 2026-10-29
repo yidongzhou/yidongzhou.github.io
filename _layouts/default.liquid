@@ -19,21 +19,7 @@
     {% include header.liquid %}
 
     <main id="main-content" class="site-main container" tabindex="-1">
-      {% if page.toc and page.toc.sidebar %}
-        {% if page.toc.sidebar == 'right' %}
-          <div class="row">
-            <div class="col-sm-9">{{ content }}</div>
-            <div class="col-sm-3"><nav id="toc-sidebar" class="sticky-top" aria-label="On this page"></nav></div>
-          </div>
-        {% else %}
-          <div class="row">
-            <div class="col-sm-3"><nav id="toc-sidebar" class="sticky-top" aria-label="On this page"></nav></div>
-            <div class="col-sm-9">{{ content }}</div>
-          </div>
-        {% endif %}
-      {% else %}
-        {{ content }}
-      {% endif %}
+      {{ content }}
     </main>
 
     {% include footer.liquid %}

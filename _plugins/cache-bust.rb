@@ -4,7 +4,6 @@ module Jekyll
   module CacheBust
     class CacheDigester
       require 'digest/md5'
-      require 'pathname'
 
       attr_accessor :file_name, :directory
 
@@ -20,8 +19,8 @@ module Jekyll
       private
 
       def directory_files_content
-        target_path = File.join(directory, '**', '*')
-        Dir[target_path].map{|f| File.read(f) unless File.directory?(f) }.join
+        source_files = ['assets/css/main.scss', *Dir[File.join(directory, '**', '*.scss')].sort]
+        source_files.map { |file| File.read(file) }.join
       end
 
       def file_content
@@ -43,7 +42,7 @@ module Jekyll
     end
 
     def bust_css_cache(file_name)
-      CacheDigester.new(file_name: file_name, directory: 'assets/_sass').digest!
+      CacheDigester.new(file_name: file_name, directory: '_sass').digest!
     end
   end
 end

@@ -10,8 +10,6 @@
       <button
         class="navbar-toggler collapsed ml-auto"
         type="button"
-        data-toggle="collapse"
-        data-target="#navbarNav"
         aria-controls="navbarNav"
         aria-expanded="false"
         aria-label="Toggle navigation"
@@ -46,13 +44,6 @@
             {% endif %}
           {% endfor %}
 
-          {% if site.search_enabled %}
-            <li class="nav-item nav-action-item">
-              <button id="search-toggle" class="site-icon-button" title="Search (Ctrl K)" aria-label="Search" onclick="openSearchModal()">
-                <i class="ti ti-search" aria-hidden="true"></i>
-              </button>
-            </li>
-          {% endif %}
           {% if site.enable_darkmode %}
             <li class="nav-item nav-action-item toggle-container">
               <button id="light-toggle" class="site-icon-button" title="Change color theme" aria-label="Change color theme">

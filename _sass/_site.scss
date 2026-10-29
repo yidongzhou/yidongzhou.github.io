@@ -146,7 +146,7 @@ button { font-family: inherit; }
 .navbar.navbar-light .navbar-nav .nav-item.active > .nav-link { font-weight: 600; }
 .navbar.navbar-light .navbar-nav .nav-item.active > .nav-link::after { content: none; }
 .nav-action-item { display: flex; align-items: center; }
-.site-icon-button, #light-toggle.site-icon-button, #search-toggle.site-icon-button {
+.site-icon-button, #light-toggle.site-icon-button {
   display: grid;
   width: 44px;
   height: 44px;
@@ -277,8 +277,6 @@ details:not([open]) > :not(summary) { display: none; }
 .publications ol.bibliography li .hidden p { max-width: 70ch; margin: 0; line-height: 1.6; }
 .publications ol.bibliography li .hidden pre { margin: 0; padding: 0; font-size: var(--type-small); line-height: 1.5; }
 .publications ol.bibliography li .hidden figure.highlight { margin: 0; }
-#bibsearch { width: 100%; height: 48px; margin: 0; padding: 10px 14px; color: var(--site-text); background: var(--site-surface); border: 0; border-radius: 0; font-size: var(--type-small); box-shadow: none; } // taste-skill-ignore: remove inherited input shadow.
-#bibsearch::placeholder { color: var(--site-muted); opacity: 1; }
 
 /* Course and package archives: metadata beside substantive material. */
 .teaching-section + .teaching-section { margin-top: var(--section-gap); }
@@ -291,7 +289,7 @@ details:not([open]) > :not(summary) { display: none; }
 .course-title, .package-title { margin: 0 0 8px; font-family: var(--site-display); font-size: var(--type-lead); font-weight: 500; line-height: 1.35; }
 .course-title a { color: var(--site-text); }
 .course-description { max-width: 64ch; margin: 12px 0; }
-.course-links, .course-evaluation { margin: 8px 0 0; font-size: var(--type-small); }
+.course-links { margin: 8px 0 0; font-size: var(--type-small); }
 .course-links { display: flex; flex-wrap: wrap; gap: 4px 20px; }
 .course-materials { margin-top: 12px; }
 .course-materials[open] { padding-bottom: 16px; }
