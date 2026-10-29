@@ -9,6 +9,16 @@
 "zhou":
   - firstname: ["Doudou"]
     url: https://doudouzhou.github.io/
+  - firstname: ["Hang"]
+    url: https://hg-zh.github.io/
+
+"song":
+  - firstname: ["Wookyeong"]
+    url: https://wookyeongsong.github.io/
+
+"zhang":
+  - firstname: ["Sinian"]
+    url: https://h7nian.github.io/
 
 "otsu":
   - firstname: ["Taisuke"]
